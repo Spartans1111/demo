@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avrio</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="h-[99px] bg-white backdrop-blur-[30px] flex justify-between px-28 items-center mx-auto">
+        <img class="w-[103.56px] h-[101.56px]" src="./assets/logo.webp" alt="Logo" />
+
+        <div class="flex gap-[40px] items-center justify-center h-[29px]">
+            <ul class="list-none flex flex-row gap-[60px]">
+                <li class="w-16 h-[29px] text-center text-[#005087] text-base font-bold font-['Montserrat']"><a
+                        href="./index.html">HOME</a></li>
+                <li class="w-[84px] h-[29px] text-center text-[#005087] text-base font-bold font-['Montserrat']"><a
+                        href="./courses.html">COURSES</a></li>
+                <li class="w-16 h-[29px] text-center text-[#005087] text-base font-bold font-['Montserrat']"><a
+                        href="./home-2.html">ABOUT</a></li>
+                <li class="w-[91px] h-[29px] text-center text-[#005087] text-base font-bold font-['Montserrat']"><a
+                        href="#contact">CONTACT</a></li>
+            </ul>
+            <button
+                class="w-[140px] h-[45px] bg-gradient-to-r from-[#001aaf] to-[#871eb6] rounded-[10px] text-center text-white text-base font-bold font-['Montserrat'] openModal button"
+                data-modal-id="myModal1">LOGIN</button>
+        </div>
+    </nav>
+
+    <!-- login form -->
+    <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="324"  fill="none" class="svg">
+                <path d="M-45 124.126C-42.5473 38.0733 53.5971 -88.8298 418.554 91.9792C554.69 159.425 825.214 106.452 837 29.3757V18.9396C837.537 22.4605 837.525 25.942 837 29.3757V338H-45V124.126Z" fill="url(#paint0_linear_909_22124)"/>
+                <defs>
+                  <linearGradient id="paint0_linear_909_22124" x1="-45" y1="169" x2="837.398" y2="169" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#001AAF"/>
+                    <stop offset="1" stop-color="#871EB6"/>
+                  </linearGradient>
+                </defs>
+            </svg>
+
+            <div class="project-detail">
+                <h4 class="text-center">Let's get started!</h4>
+                <form>
+                    <input placeholder="Email ID" type="email" />
+                    <input placeholder="Password" type="password" />
+                    <a>Forgot Password?</a>
+                    <button>Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <!-- hero -->
+    <section class="relative">
+        <div class="course-banner relative">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none"
+                class="absolute bottom-0 left-0">
+                <path d="M1540 1C764 3.66758 847.5 704 -111 668.5V341.25V1H1540Z" fill="black" fill-opacity="0.3"
+                    stroke="none" />
+            </svg>
+            <div class="absolute top-1/4 left-0 ml-[120px] z-20 text-white">
+                <div class="text-white text-[56px] font-bold font-['Montserrat'] leading-[60px] w-[900px]">
+                    LNG Tanker Cargo Operations & Ballast Water Handling Simulator (LCHS)
+                </div>
+                <div class=" text-white text-lg font-normal font-['Montserrat'] leading-[30px] py-[26px]">
+                    A cutting-edge tool revolutionizing how professionals are trained in handling LNG operations.
+                </div>
+                <button
+                    class="py-[7.11px] px-3 text-center text-white text-base font-bold font-['Inter'] bg-gradient-to-r from-[#001aaf] to-[#871eb6] rounded-[10px] openModal button"
+                    data-modal-id="myModal2">
+                    Enquire more
+                </button>
+            </div>
+        </div>
+
+
+        <!-- enquire -->
+        <div id="myModal2" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="653" fill="none" class="svg">
+                    <path d="M-45 120.814C-42.5473 37.4945 53.5971 -85.3779 418.554 89.6883C554.69 154.992 825.214 103.702 837 29.0733V18.9687C837.537 22.3777 837.525 25.7487 837 29.0733V918.521H-45V120.814Z" fill="url(#paint0_linear_909_22209)"/>
+                    <defs>
+                      <linearGradient id="paint0_linear_909_22209" x1="-45" y1="459.576" x2="837.398" y2="459.576" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#001AAF"/>
+                        <stop offset="1" stop-color="#871EB6"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+
+                <div class="project-detail">
+                    <h4 class="text-center">Course Booking Form</h4>
+                    <form>
+                        <input placeholder="Name" type="text" />
+                        <input placeholder="Title / Rank" type="text" />
+                        <input placeholder="Email ID" type="email" />
+                        <input placeholder="Mobile Number" type="number" />
+                        <div class="select-div">
+                            <select>
+                                <option>Enquiry type</option>
+                            </select>
+                        </div>
+                        <textarea placeholder="Message"></textarea>
+                        <button>Enquire</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- courses -->
+    <section class="mx-[120px] my-[50px]">
+        <div class="text-[#3A321D] font-montserrat text-[32px] font-bold leading-[20px] mb-10">Offered Courses</div>
+        <div class="flex w-[100%] rounded-[10px]" style="border: 1px solid #CCC;">
+            <img src="./assets/ship2.png" class="w-[35%] h-[499.127px]" />
+            <div class="w-[65%] p-[50px]">
+                <h2 class="text-[#3A321D] font-montserrat text-[24px] font-bold leading-[40px]">
+                    LNG Tanker Cargo Operations and Ballast Water Handling Simulator (LCHS) Course.
+                </h2>
+                <p class="text-[#3A321D] font-montserrat text-[18px] font-normal leading-[25px] py-[50px]">
+                    The aim of this course is to ensure that mariners are trained and prepared to respond safely and
+                    efficiently for controlling the cargo handling and other operations on LNG carriers, required in
+                    today’s Tanker trade. It gives the participants “hands-on” training and builds their confidence in
+                    handling cargo operations and troubleshooting during work in LNG carriers.
+                </p>
+                <button
+                    class="w-[142.15px] h-[61.94px] bg-gradient-to-r from-[#001aaf] to-[#871eb6] rounded-[10px] text-[#FFF] text-center font-montserrat text-[16px] font-bold leading-normal">
+                    Start Course
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- course list -->
+    <section class="content-container">
+        <div class="left-side">
+            <div class="text-white font-montserrat text-4xl font-bold leading-tight">Key Benefits</div>
+            <div class="topic flex" data-target="topic1">
+                <p class="pr-2 text-white font-montserrat text-xl font-normal leading-[2.8125rem]">01</p>
+                <div class="flex justify-between w-[100%]">
+                    <p class="text-white font-montserrat text-2xl font-bold leading-[2.8125rem]">Course Focus</p>
+                    <div style="width: 36px; height:36px;  border:2px solid white; border-radius: 50px; color: black; display: flex; justify-content: center; align-items: center; font-weight: 900; transition: transform 0.5s ease;"
+                        class="icon">
+                        <!-- <i class="fa-solid fa-less-than font-bold text-white"></i> -->
+                        <i class="fa-solid fa-greater-than font-bold text-white"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="topic flex" data-target="topic2">
+                <p class="pr-2 text-white font-montserrat text-xl font-normal leading-[2.8125rem]">02</p>
+                <div class="flex justify-between w-[100%]">
+                    <p class="text-white font-montserrat text-2xl font-bold leading-[2.8125rem]">Practical Exercises</p>
+                    <div style="width: 36px; height:36px;  border:2px solid white; border-radius: 50px; color: black; display: flex; justify-content: center; align-items: center; font-weight: 900; transition: transform 0.5s ease;"
+                        class="icon">
+                        <i class="fa-solid fa-greater-than font-bold text-white"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="topic flex" data-target="topic3">
+                <p class="pr-2 text-white font-montserrat text-xl font-normal leading-[2.8125rem]">03</p>
+                <div class="flex justify-between w-[100%]">
+                    <p class="text-white font-montserrat text-2xl font-bold leading-[2.8125rem]">Operation & Control of
+                        Cargo</p>
+                    <div style="width: 36px; height:36px;  border:2px solid white; border-radius: 50px; color: black; display: flex; justify-content: center; align-items: center; font-weight: 900; transition: transform 0.5s ease;"
+                        class="icon">
+                        <i class="fa-solid fa-greater-than font-bold text-white"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="topic flex" data-target="topic4" style="border: none;">
+                <p class="pr-2 text-white font-montserrat text-xl font-normal leading-[2.8125rem]">04</p>
+                <div class="flex justify-between w-[100%]">
+                    <p class="text-white font-montserrat text-2xl font-bold leading-[2.8125rem]">Simulated Cargo
+                        Exercises</p>
+                    <div style="width: 36px; height:36px;  border:2px solid white; border-radius: 50px; color: black; display: flex; justify-content: center; align-items: center; font-weight: 900; transition: transform 0.5s ease;"
+                        class="icon">
+                        <i class="fa-solid fa-greater-than font-bold text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-side mr-[120px] ml-[50px]">
+            <div id="topic1" class="right-side-content active">
+                <div class="flex flex-col gap-[30px]">
+                    <p class="pr-2 text-white font-montserrat text-xl font-normal leading-[2.8125rem]">01</p>
+                    <img src="./assets/integration.png" class="w-[6rem] h-[6rem]" />
+                    <h2 class="text-white font-montserrat text-2xl font-bold leading-[2.8125rem]">Course Focus</h2>
+                    <p class="text-white font-bold text-[1.125rem] leading-[1.5625rem] font-[Montserrat]">The course
+                        focuses on ensuring understanding of the principles involved, and the undertaking of all cargo
+                        operations carried out on an LNG carrier, in a safe and efficient manner.  </p>
+                </div>
+            </div>
+            <div id="topic2" class="right-side-content">
+                <div class="flex flex-col gap-[30px]">
+                    <p class="pr-2 text-white font-montserrat text-xl font-normal leading-[2.8125rem]">02</p>
+                    <img src="./assets/notebook.png" class="w-[6rem] h-[6rem]" />
+                    <h2 class="text-white font-montserrat text-2xl font-bold leading-[2.8125rem]">Practical Exercises
+                    </h2>
+                    <p class="text-white font-bold text-[1.125rem] leading-[1.5625rem] font-[Montserrat]">Practical
+                        exercises structured around the procedures and operation of the cargo and ballast installation
+                        of an LNG tanker. </p>
+                </div>
+            </div>
+            <div id="topic3" class="right-side-content">
+                <div class="flex flex-col gap-[30px]">
+                    <p class="pr-2 text-white font-montserrat text-xl font-normal leading-[2.8125rem]">03</p>
+                    <img src="./assets/cargo-ship.png" class="w-[6rem] h-[6rem]" />
+                    <h2 class="text-white font-montserrat text-2xl font-bold leading-[2.8125rem]">Operation & Control of
+                        Cargo</h2>
+                    <p class="text-white font-bold text-[1.125rem] leading-[1.5625rem] font-[Montserrat]">A safer and
+                        more effective contribution to the operation and control of the cargo and ballast installation
+                        of a LNG tanker. </p>
+                </div>
+            </div>
+            <div id="topic4" class="right-side-content">
+                <div class="flex flex-col gap-[30px]">
+                    <p class="pr-2 text-white font-montserrat text-xl font-normal leading-[2.8125rem]">04</p>
+                    <img src="./assets/simulation.png" class="w-[6rem] h-[6rem]" />
+                    <h2 class="text-white font-montserrat text-2xl font-bold leading-[2.8125rem]">Simulated Cargo
+                        Exercises</h2>
+                    <p class="text-white font-bold text-[1.125rem] leading-[1.5625rem] font-[Montserrat]">Simulated
+                        cargo exercises conducted using a 'State of the art' LNG Cargo Operations Simulator, covering
+                        all subject areas recommended by IMO Model Course 1.36 “Liquefied Natural Gas (LNG) Tanker Cargo
+                        and Ballast Handling Simulator”. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- container -->
+    <section>
+        <div class="container-ship">
+            <h1 class="text-white font-montserrat text-[2.25rem] font-bold leading-normal pt-[120px] ml-[120px]">Key
+                Features</h1>
+        </div>
+
+        <section class="bg-white relative pt-[10px] z-1 pb-[60px]">
+            <div class="wrapper">
+                <div class="relative z-8 bg-white rounded-[15px] py-[3.38rem] px-[3.38rem] mt-[-160px] mx-[120px]"
+                    style="box-shadow: 0px 24px 32px 0px rgba(44, 99, 229, 0.08);">
+                    <h3 class="text-[#272726] text-[28px] font-bold font-['Montserrat'] leading-10 pb-[16px]">
+                        Course Objective
+                    </h3>
+                    <p
+                        class="bodycontent text-[#3a321d] text-base font-normal font-['Montserrat'] leading-[25px] py-[16px] text-[16px] mb-[25px]">
+                        With the growing understanding about hazards involving carriage of LNG cargo, this course
+                        develops the professional skills and confidence of Deck officers who are engaged in the handling
+                        of Bulk Liquid Cargoes with the help of simulating the cargo operations conducted on LNG
+                        Tankers.
+                    </p>
+                    <a href="#" class="btn">Learn more</a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <!-- accordion -->
+    <section class="accordion px-[120px] py-[50px]">
+        <div class="h-[59.08694rem] px-[50px] py-[50px] rounded-[10px]"
+            style="background-color: rgba(16, 22, 36, 0.6);">
+            <div class="accordion-container">
+                <div class="accordion-item active">
+                    <div class="accordion-title"><u>Who is it for</u></div>
+                    <div class="accordion-content">
+                        <p>Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
+                            aimed at those who will be responsible for the safe planning and execution of operations
+                            related to the cargo on board such vessels. The course will also be suitable for anybody
+                            engaged in the LNG industry who wishes to acquire a better understanding of the cargo
+                            operations associated with LNG vessels.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-title"><u>Syllabus Encompasses </u></div>
+                    <div class="accordion-content">
+                        <p>Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
+                            aimed at those who will be responsible for the safe planning and execution of operations
+                            related to the cargo on board such vessels. The course will also be suitable for anybody
+                            engaged in the LNG industry who wishes to acquire a better understanding of the cargo
+                            operations associated with LNG vessels.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-title"><u>Methodology</u></div>
+                    <div class="accordion-content">
+                        <p>Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
+                            aimed at those who will be responsible for the safe planning and execution of operations
+                            related to the cargo on board such vessels. The course will also be suitable for anybody
+                            engaged in the LNG industry who wishes to acquire a better understanding of the cargo
+                            operations associated with LNG vessels.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-title"><u>Certification</u></div>
+                    <div class="accordion-content">
+                        <p>Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
+                            aimed at those who will be responsible for the safe planning and execution of operations
+                            related to the cargo on board such vessels. The course will also be suitable for anybody
+                            engaged in the LNG industry who wishes to acquire a better understanding of the cargo
+                            operations associated with LNG vessels.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-title"><u>Duration of Online Class</u></div>
+                    <div class="accordion-content">
+                        <p>Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
+                            aimed at those who will be responsible for the safe planning and execution of operations
+                            related to the cargo on board such vessels. The course will also be suitable for anybody
+                            engaged in the LNG industry who wishes to acquire a better understanding of the cargo
+                            operations associated with LNG vessels.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-title"><u>Suggested Target Group</u></div>
+                    <div class="accordion-content">
+                        <p>Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
+                            aimed at those who will be responsible for the safe planning and execution of operations
+                            related to the cargo on board such vessels. The course will also be suitable for anybody
+                            engaged in the LNG industry who wishes to acquire a better understanding of the cargo
+                            operations associated with LNG vessels.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-row gap-[20px]" style="margin-top: 50px;">
+                <button
+                    class="w-[142.15px] h-[61.94px] bg-gradient-to-r from-[#001aaf] to-[#871eb6] rounded-[10px] text-[#FFF] text-center font-montserrat text-[16px] font-bold leading-normal">
+                    Start Course
+                </button>
+                <button
+                    class="w-[142.15px] h-[61.94px] bg-gradient-to-r from-[#001aaf] to-[#871eb6] rounded-[10px] text-[#FFF] text-center font-montserrat text-[16px] font-bold leading-normal">
+                    Start Course
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="wrapper">
+            <div class="row">
+                <div class="col1">
+                    <img src="./assets/logo.webp" alt="logo">
+                    <p class="bodycontent">© 2024 Avrio. All rights reserved</p>
+                </div>
+
+                <div class="col2">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li> <a href="#">About</a></li>
+                        <li> <a href="#">Privacy Policy</a></li>
+
+                    </ul>
+                </div>
+                <div class="col3">
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li> <a href="#">Testimonials</a></li>
+                        <li> <a href="#">Terms & Conditions</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+    <!-- <script>
+        // JavaScript to handle topic switching
+        const topics = document.querySelectorAll('.left-side .topic');
+        const contents = document.querySelectorAll('.right-side-content');
+    
+        // Default content (first topic)
+        const defaultContent = document.querySelector('#topic1');
+        defaultContent.classList.add('active');
+    
+        topics.forEach(topic => {
+            topic.addEventListener('mouseover', function() {
+                const targetId = this.getAttribute('data-target');
+                contents.forEach(content => {
+                    content.classList.remove('active');
+                });
+                document.getElementById(targetId).classList.add('active');
+            });
+    
+            topic.addEventListener('mouseleave', function() {
+                // Show the default content again when mouse leaves
+                contents.forEach(content => {
+                    content.classList.remove('active');
+                });
+                defaultContent.classList.add('active');
+            });
+        });
+    </script> -->
+    <script>
+        // JavaScript to handle topic switching
+        const topics = document.querySelectorAll('.left-side .topic');
+        const contents = document.querySelectorAll('.right-side-content');
+
+        // Default content (first topic)
+        const defaultContent = document.querySelector('#topic1');
+        const defaultTopic = document.querySelector('[data-target="topic1"]');
+        defaultContent.classList.add('active');
+        defaultTopic.classList.add('rotated');
+
+        topics.forEach(topic => {
+            topic.addEventListener('mouseover', function () {
+                const targetId = this.getAttribute('data-target');
+
+                // Remove active and rotated classes from all topics
+                topics.forEach(t => {
+                    t.classList.remove('rotated');
+                });
+                contents.forEach(content => {
+                    content.classList.remove('active');
+                });
+
+                // Add active class to the target content and rotated class to the hovered topic
+                document.getElementById(targetId).classList.add('active');
+                this.classList.add('rotated');
+            });
+
+            topic.addEventListener('mouseleave', function () {
+                // Show the default content again when mouse leaves
+                contents.forEach(content => {
+                    content.classList.remove('active');
+                });
+                defaultContent.classList.add('active');
+
+                // Ensure only the default topic has the rotated class
+                topics.forEach(t => {
+                    t.classList.remove('rotated');
+                });
+                defaultTopic.classList.add('rotated');
+            });
+        });
+
+
+
+        // accordion
+        document.addEventListener('DOMContentLoaded', function () {
+            const items = document.querySelectorAll('.accordion-item');
+            const defaultItem = items[0]; // Default to the first item
+
+            // Set the first item as active by default
+            defaultItem.classList.add('active');
+
+            let isHovering = false; // Variable to track hover state
+
+            items.forEach(item => {
+                const title = item.querySelector('.accordion-title');
+
+                title.addEventListener('mouseover', function () {
+                    isHovering = true; // Set to true when hovering over an item
+
+                    // Remove active class from all items and add it to the current one
+                    items.forEach(i => {
+                        if (i !== item) {
+                            i.classList.remove('active');
+                        }
+                    });
+                    item.classList.add('active');
+                });
+
+                title.addEventListener('mouseout', function () {
+                    isHovering = false; // Set to false when not hovering over an item
+                });
+            });
+
+            // Handle mouse leave event for the entire accordion container
+            document.querySelector('.accordion-container').addEventListener('mouseleave', function () {
+                if (!isHovering) {
+                    // Reset to default item
+                    items.forEach(item => {
+                        item.classList.remove('active');
+                    });
+                    defaultItem.classList.add('active');
+                }
+            });
+        });
+
+
+
+
+
+
+        // model
+        var modals = document.querySelectorAll(".modal");
+
+        var modalButtons = document.querySelectorAll(".openModal");
+        var closeButtons = document.querySelectorAll(".close");
+
+
+        // Function to open modal
+        function openModal(modalId) {
+            var modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = "block";
+                document.body.classList.add("modal-open");
+            }
+        }
+
+        // Function to close modal
+        function closeModal(modalId) {
+            var modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = "none";
+                document.body.classList.remove("modal-open");
+            }
+        }
+
+        // Event listeners for opening modals
+        modalButtons.forEach(function (button) {
+            button.addEventListener("click", function () {
+                var modalId = this.getAttribute("data-modal-id");
+                openModal(modalId);
+            });
+        });
+
+        // Event listeners for closing modals
+        closeButtons.forEach(function (button) {
+            button.addEventListener("click", function () {
+                var modalId = this.closest(".modal").id;
+                closeModal(modalId);
+            });
+        });
+
+        // Close modal if user clicks outside the modal content
+        window.addEventListener("click", function (event) {
+            modals.forEach(function (modal) {
+                if (event.target == modal) {
+                    var modalId = modal.id;
+                    closeModal(modalId);
+                }
+            });
+        });
+
+        // Prevent modal from closing when clicking inside modal content
+        modals.forEach(function (modal) {
+            modal.children[0].addEventListener("click", function (event) {
+                event.stopPropagation();
+            });
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course home</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+
+<body>
+    <nav class="h-[99px] bg-white backdrop-blur-[30px] flex justify-between px-28 items-center mx-auto">
+        <img class="w-[103.56px] h-[101.56px]" src="./assets/logo.webp" alt="Logo" />
+
+        <div class="flex gap-[40px] items-center justify-center h-[29px]">
+            <ul class="list-none flex flex-row gap-[60px]">
+                <li class="h-[29px] text-center text-[#005087] text-base font-bold font-['Montserrat']"><a
+                        href="./index.html">HOME</a></li>
+                <li class="h-[29px] text-center text-[#005087] text-base font-bold font-['Montserrat']"><a
+                        href="./courses.html">MY LEARNING</a></li>
+                <li class="h-[29px] text-center text-[#005087] text-base font-bold font-['Montserrat']"><a
+                        href="#contact">CONTACT</a></li>
+            </ul>
+            <button
+                class="w-[140px] h-[45px] bg-gradient-to-r from-[#001aaf] to-[#871eb6] rounded-[10px] text-center text-white text-base font-bold font-['Montserrat']">LOGOUT</button>
+        </div>
+    </nav>
+
+    <!-- hero -->
+    <section class="relative">
+        <div class="home-2-banner relative">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none"
+                class="absolute bottom-0 left-0">
+                <path d="M1540 1C764 3.66758 847.5 704 -111 668.5V341.25V1H1540Z" fill="black" fill-opacity="0.3"
+                    stroke="none" />
+            </svg>
+            <div class="absolute top-1/4 left-0 ml-[120px] z-20 text-white">
+                <div class="text-white text-[56px] font-bold font-['Montserrat'] leading-[60px]">
+                    Welcome aboard the <br /> LNG World!
+                </div>
+                <div class=" text-white text-lg font-normal font-['Montserrat'] leading-[30px] py-[26px]">
+                    Let’s get started on your path to becoming an LNG expert!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about -->
+    <section class="about">
+        <div class="wrapper">
+            <div class="aboutcontent" style="margin-top: 0;">
+                <h3 class="text-[#3a321d] text-[28px] font-bold font-['Montserrat'] leading-10 pb-[16px]">AVRIO:
+                    Your Gateway to Staying Relevant and Prepared for the Future.</h3>
+                <hr>
+                <p
+                    class="bodycontent text-[#3a321d] text-base font-normal font-['Montserrat'] leading-[25px] py-[16px] text-[16px]">
+                    In the fast-evolving world of maritime operations, the Liquefied Natural Gas (LNG) sector stands
+                    out for its complexity and high safety standards. The need for specialized training for maritime
+                    professionals in the LNG industry has never been greater. At Avrio, we up-skill and re-skill
+                    officers to ensure they are future-ready and relevant. Our experiential LNG training simulator
+                    focuses on achieving two major goals: operational excellence and enhanced maritime safety.
+                    <br><br> Enter the AVRIO LNG training simulator - Fostering a dynamic and immersive learning
+                    environment with interactive graphics for enhanced user engagement.
+                </p>
+                <a href="#" class="btn">Learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- change content on hover -->
+    <section>
+        <div class="content-container content-bg">
+            <div class="left-side">
+                <div class="text-white font-montserrat text-4xl font-bold leading-tight">What to Expect</div>
+                <div class="topic flex" data-target="topic1">
+                    <div class="flex justify-between w-[100%]">
+                        <p class="text-white font-montserrat text-2xl font-bold leading-[2.8125rem]">In-Depth Modules
+                        </p>
+                        <div style="width: 36px; height:36px;  border:2px solid white; border-radius: 50px; color: black; display: flex; justify-content: center; align-items: center; font-weight: 900; transition: transform 0.5s ease;"
+                            class="icon">
+                            <!-- <i class="fa-solid fa-less-than font-bold text-white"></i> -->
+                            <i class="fa-solid fa-greater-than font-bold text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="topic flex" data-target="topic2">
+                    <div class="flex justify-between w-[100%]">
+                        <p class="text-white font-montserrat text-2xl font-bold leading-[2.8125rem]">Interactive
+                            Learning</p>
+                        <div style="width: 36px; height:36px;  border:2px solid white; border-radius: 50px; color: black; display: flex; justify-content: center; align-items: center; font-weight: 900; transition: transform 0.5s ease;"
+                            class="icon">
+                            <i class="fa-solid fa-greater-than font-bold text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="topic flex" data-target="topic3">
+                    <div class="flex justify-between w-[100%]">
+                        <p class="text-white font-montserrat text-2xl font-bold leading-[2.8125rem]">Flexible Access</p>
+                        <div style="width: 36px; height:36px;  border:2px solid white; border-radius: 50px; color: black; display: flex; justify-content: center; align-items: center; font-weight: 900; transition: transform 0.5s ease;"
+                            class="icon">
+                            <i class="fa-solid fa-greater-than font-bold text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="topic flex" data-target="topic4" style="border: none;">
+                    <div class="flex justify-between w-[100%]">
+                        <p class="text-white font-montserrat text-2xl font-bold leading-[2.8125rem]">Flexible Access</p>
+                        <div style="width: 36px; height:36px;  border:2px solid white; border-radius: 50px; color: black; display: flex; justify-content: center; align-items: center; font-weight: 900; transition: transform 0.5s ease;"
+                            class="icon">
+                            <i class="fa-solid fa-greater-than font-bold text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-side mr-[120px] ml-[50px] my-[50px]">
+                <div id="topic1" class="right-side-content active">
+                    <div class="flex flex-col gap-[30px]">
+                        <img src="./assets/integration.png" class="w-[6rem] h-[6rem]" />
+                        <h2 class="text-white font-montserrat text-2xl font-bold leading-[2.8125rem]">Course Focus</h2>
+                        <p class="text-white font-bold text-[1.125rem] leading-[1.5625rem] font-[Montserrat]">The course
+                            focuses on ensuring understanding of the principles involved, and the undertaking of all
+                            cargo operations carried out on an LNG carrier, in a safe and efficient manner.  </p>
+                    </div>
+                </div>
+                <div id="topic2" class="right-side-content">
+                    <div class="flex flex-col gap-[30px]">
+                        <img src="./assets/notebook.png" class="w-[6rem] h-[6rem]" />
+                        <h2 class="text-white font-montserrat text-2xl font-bold leading-[2.8125rem]">Practical
+                            Exercises</h2>
+                        <p class="text-white font-bold text-[1.125rem] leading-[1.5625rem] font-[Montserrat]">Practical
+                            exercises structured around the procedures and operation of the cargo and ballast
+                            installation of an LNG tanker. </p>
+                    </div>
+                </div>
+                <div id="topic3" class="right-side-content">
+                    <div class="flex flex-col gap-[30px]">
+                        <img src="./assets/cargo-ship.png" class="w-[6rem] h-[6rem]" />
+                        <h2 class="text-white font-montserrat text-2xl font-bold leading-[2.8125rem]">Operation &
+                            Control of Cargo</h2>
+                        <p class="text-white font-bold text-[1.125rem] leading-[1.5625rem] font-[Montserrat]">A safer
+                            and more effective contribution to the operation and control of the cargo and ballast
+                            installation of a LNG tanker. </p>
+                    </div>
+                </div>
+                <div id="topic4" class="right-side-content">
+                    <div class="flex flex-col gap-[30px]">
+                        <img src="./assets/simulation.png" class="w-[6rem] h-[6rem]" />
+                        <h2 class="text-white font-montserrat text-2xl font-bold leading-[2.8125rem]">Simulated Cargo
+                            Exercises</h2>
+                        <p class="text-white font-bold text-[1.125rem] leading-[1.5625rem] font-[Montserrat]">Simulated
+                            cargo exercises conducted using a 'State of the art' LNG Cargo Operations Simulator,
+                            covering all subject areas recommended by IMO Model Course 1.36 “Liquefied Natural Gas (LNG)
+                            Tanker Cargo and Ballast Handling Simulator”. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-[#021220] px-[120px] py-[50px] flex flex-col gap-[20px]" style="background-color: #021220;">
+            <h4 class="text-[24px] text-white">Contact Support</h4>
+            <p class="text-[18px] text-white">We are excited to be a part of your learning journey and look forward to
+                supporting you as you gain valuable knowledge and skills in LNG operations. If you have any questions or
+                need assistance, please contact -  LNGSimulations@Avrio.Blue</p>
+        </div>
+    </section>
+
+
+    <!-- simulation courses -->
+
+    <section class="my-[50px] mx-[120px]">
+        <h2 style="margin-bottom: 50px;" class="font-inter text-[32px] font-bold leading-[20px] text-left">LNG
+            Simulation Course</h2>
+        <div class="flex flex-col gap-[30px]">
+            <div class="flex rounded-[10px]"
+                style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; height: 290px;">
+                <div style="width: 40%;">
+                    <img src="./assets/day1.png" style="height: 100%; width: 100%;" />
+                </div>
+                <div class="w-[60%] flex flex-col gap-[30px]" style="padding: 50px;">
+                    <h2 class="font-inter text-[24px] font-bold leading-[40px] text-left">Day 1</h2>
+                    <p class="font-inter text-[16px] font-normal leading-[25px] text-left">Improving the knowledge,
+                        understanding and practical skills of those persons involved in the handling of LNG on ships and
+                        terminals, using our specially designed simulator.</p>
+                    <button style="text-align: left; width: max-content; padding:10px;"
+                        class="bg-gradient-to-r from-[#001aaf] to-[#871eb6] rounded-[10px] text-center text-white text-base font-bold font-['Montserrat'] text-[16px]">View
+                        Training</button>
+                </div>
+            </div>
+
+            <div class="flex rounded-[10px]"
+                style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; height: 290px;">
+                <div style="width: 40%;">
+                    <img src="./assets/day1.png" style="height: 100%;" />
+                </div>
+                <div class="w-[60%] flex flex-col gap-[30px]" style="padding: 50px;">
+                    <h2 class="font-inter text-[24px] font-bold leading-[40px] text-left">Day 2</h2>
+                    <p class="font-inter text-[16px] font-normal leading-[25px] text-left">Improving the knowledge,
+                        understanding and practical skills of those persons involved in the handling of LNG on ships and
+                        terminals, using our specially designed simulator.</p>
+                    <button style="text-align: left; width: max-content; padding:10px;"
+                        class="bg-gradient-to-r from-[#001aaf] to-[#871eb6] rounded-[10px] text-center text-white text-base font-bold font-['Montserrat'] text-[16px]">View
+                        Training</button>
+                </div>
+            </div>
+
+            <div class="flex rounded-[10px]"
+                style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; height: 290px;">
+                <div style="width: 40%;">
+                    <img src="./assets/day1.png" style="height: 100%;" />
+                </div>
+                <div class="w-[60%] flex flex-col gap-[30px]" style="padding: 50px;">
+                    <h2 class="font-inter text-[24px] font-bold leading-[40px] text-left">Day 3</h2>
+                    <p class="font-inter text-[16px] font-normal leading-[25px] text-left">Improving the knowledge,
+                        understanding and practical skills of those persons involved in the handling of LNG on ships and
+                        terminals, using our specially designed simulator.</p>
+                    <button style="text-align: left; width: max-content; padding:10px;"
+                        class="bg-gradient-to-r from-[#001aaf] to-[#871eb6] rounded-[10px] text-center text-white text-base font-bold font-['Montserrat'] text-[16px]">View
+                        Training</button>
+                </div>
+            </div>
+
+            <div class="flex rounded-[10px]"
+                style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; height: 290px;">
+                <div style="width: 40%;">
+                    <img src="./assets/day1.png" style="height: 100%;" />
+                </div>
+                <div class="w-[60%] flex flex-col gap-[30px]" style="padding: 50px;">
+                    <h2 class="font-inter text-[24px] font-bold leading-[40px] text-left">Day 4</h2>
+                    <p class="font-inter text-[16px] font-normal leading-[25px] text-left">Improving the knowledge,
+                        understanding and practical skills of those persons involved in the handling of LNG on ships and
+                        terminals, using our specially designed simulator.</p>
+                    <button style="text-align: left; width: max-content; padding:10px;"
+                        class="bg-gradient-to-r from-[#001aaf] to-[#871eb6] rounded-[10px] text-center text-white text-base font-bold font-['Montserrat'] text-[16px]">View
+                        Training</button>
+                </div>
+            </div>
+
+            <div class="flex rounded-[10px]"
+                style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; height: 290px;">
+                <div style="width: 40%;">
+                    <img src="./assets/day1.png" style="height: 100%;" />
+                </div>
+                <div class="w-[60%] flex flex-col gap-[30px]" style="padding: 50px;">
+                    <h2 class="font-inter text-[24px] font-bold leading-[40px] text-left">Day 5</h2>
+                    <p class="font-inter text-[16px] font-normal leading-[25px] text-left">Improving the knowledge,
+                        understanding and practical skills of those persons involved in the handling of LNG on ships and
+                        terminals, using our specially designed simulator.</p>
+                    <button style="text-align: left; width: max-content; padding:10px;"
+                        class="bg-gradient-to-r from-[#001aaf] to-[#871eb6] rounded-[10px] text-center text-white text-base font-bold font-['Montserrat'] text-[16px]">View
+                        Training</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="wrapper">
+            <div class="row">
+                <div class="col1">
+                    <img src="./assets/logo.webp" alt="logo">
+                    <p class="bodycontent">© 2024 Avrio. All rights reserved</p>
+                </div>
+
+                <div class="col2">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li> <a href="#">About</a></li>
+                        <li> <a href="#">Privacy Policy</a></li>
+
+                    </ul>
+                </div>
+                <div class="col3">
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li> <a href="#">Testimonials</a></li>
+                        <li> <a href="#">Terms & Conditions</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="./script.js"></script>
+    <script>
+        // JavaScript to handle topic switching
+        const topics = document.querySelectorAll('.left-side .topic');
+        const contents = document.querySelectorAll('.right-side-content');
+
+        // Default content (first topic)
+        const defaultContent = document.querySelector('#topic1');
+        const defaultTopic = document.querySelector('[data-target="topic1"]');
+        defaultContent.classList.add('active');
+        defaultTopic.classList.add('rotated');
+
+        topics.forEach(topic => {
+            topic.addEventListener('mouseover', function () {
+                const targetId = this.getAttribute('data-target');
+
+                // Remove active and rotated classes from all topics
+                topics.forEach(t => {
+                    t.classList.remove('rotated');
+                });
+                contents.forEach(content => {
+                    content.classList.remove('active');
+                });
+
+                // Add active class to the target content and rotated class to the hovered topic
+                document.getElementById(targetId).classList.add('active');
+                this.classList.add('rotated');
+            });
+
+            topic.addEventListener('mouseleave', function () {
+                // Show the default content again when mouse leaves
+                contents.forEach(content => {
+                    content.classList.remove('active');
+                });
+                defaultContent.classList.add('active');
+
+                // Ensure only the default topic has the rotated class
+                topics.forEach(t => {
+                    t.classList.remove('rotated');
+                });
+                defaultTopic.classList.add('rotated');
+            });
+        });
+
+    </script>
+</body>
+
+</html>
