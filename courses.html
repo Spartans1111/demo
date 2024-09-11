@@ -7,6 +7,13 @@
     <title>Avrio</title>
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -58,12 +65,12 @@
             </svg>
 
             <div class="project-detail">
-                <h4 class="text-center">Let's get started!</h4>
+                <h4 class="h-12 text-center text-[#666666] text-lg font-bold font-['Montserrat']">Let's get started!</h4>
                 <form>
-                    <input placeholder="Email ID" type="email" />
-                    <input placeholder="Password" type="password" />
-                    <a>Forgot Password?</a>
-                    <button>Login</button>
+                    <input placeholder="Email ID" type="email" class="text-[#666666] text-sm font-bold font-['Montserrat']"/>
+                    <input placeholder="Password" type="password" class="text-[#666666] text-sm font-bold font-['Montserrat']"/>
+                    <a class="text-[#666666] text-sm font-bold font-['Montserrat']" style="text-decoration: underline;">Forgot Password?</a>
+                    <button class="h-10 bg-gradient-to-r from-[#001aaf] to-[#871eb6] rounded-[10px]">Log In</button>
                 </form>
             </div>
         </div>
@@ -80,10 +87,10 @@
                     stroke="none" />
             </svg>
             <div class="absolute top-1/4 left-0 ml-[120px] z-20 text-white">
-                <div class="text-white text-[56px] font-bold font-['Montserrat'] leading-[60px] w-[900px]">
+                <div class="text-white text-[56px] font-bold font-['Montserrat'] leading-[60px] w-[65%]">
                     LNG Tanker Cargo Operations & Ballast Water Handling Simulator (LCHS)
                 </div>
-                <div class=" text-white text-lg font-normal font-['Montserrat'] leading-[30px] py-[26px]">
+                <div class=" text-white text-lg font-normal font-['Montserrat'] leading-[30px] py-[26px] w-[35%]">
                     A cutting-edge tool revolutionizing how professionals are trained in handling LNG operations.
                 </div>
                 <button
@@ -100,7 +107,7 @@
             <div class="modal-content">
                 <span class="close">&times;</span>
 
-                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="653" fill="none" class="svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="630" fill="none" class="svg">
                     <path d="M-45 120.814C-42.5473 37.4945 53.5971 -85.3779 418.554 89.6883C554.69 154.992 825.214 103.702 837 29.0733V18.9687C837.537 22.3777 837.525 25.7487 837 29.0733V918.521H-45V120.814Z" fill="url(#paint0_linear_909_22209)"/>
                     <defs>
                       <linearGradient id="paint0_linear_909_22209" x1="-45" y1="459.576" x2="837.398" y2="459.576" gradientUnits="userSpaceOnUse">
@@ -111,19 +118,19 @@
                   </svg>
 
                 <div class="project-detail">
-                    <h4 class="text-center">Course Booking Form</h4>
+                    <h4 class="text-center text-[#666666] text-lg font-bold font-['Montserrat'] tracking-wide">Course Booking Form</h4>
                     <form>
-                        <input placeholder="Name" type="text" />
-                        <input placeholder="Title / Rank" type="text" />
-                        <input placeholder="Email ID" type="email" />
-                        <input placeholder="Mobile Number" type="number" />
+                        <input placeholder="Full Name" type="text" class="text-[#666666] text-sm font-bold font-['Montserrat'] tracking-wide"/>
+                        <input placeholder="Title / Rank" type="text" class="text-[#666666] text-sm font-bold font-['Montserrat'] tracking-wide"/>
+                        <input placeholder="Email ID" type="email" class="text-[#666666] text-sm font-bold font-['Montserrat'] tracking-wide"/>
+                        <input placeholder="Mobile Number" type="number" class="text-[#666666] text-sm font-bold font-['Montserrat'] tracking-wide"/>
                         <div class="select-div">
-                            <select>
+                            <select class="text-[#666666] text-sm font-bold font-['Montserrat'] tracking-wide">
                                 <option>Enquiry type</option>
                             </select>
                         </div>
-                        <textarea placeholder="Message"></textarea>
-                        <button>Enquire</button>
+                        <textarea placeholder="Message" class="text-[#666666] text-sm font-bold font-['Montserrat'] tracking-wide"></textarea>
+                        <button class="h-10 bg-gradient-to-r from-[#001aaf] to-[#871eb6] rounded-[10px] font-['Montserrat']">Submit</button>
                     </form>
                 </div>
             </div>
@@ -132,21 +139,23 @@
 
     <!-- courses -->
     <section class="mx-[120px] my-[50px]">
-        <div class="text-[#3A321D] font-montserrat text-[32px] font-bold leading-[20px] mb-10">Offered Courses</div>
-        <div class="flex w-[100%] rounded-[10px]" style="border: 1px solid #CCC;">
-            <img src="./assets/ship2.png" class="w-[35%] h-[499.127px]" />
-            <div class="w-[65%] p-[50px]">
-                <h2 class="text-[#3A321D] font-montserrat text-[24px] font-bold leading-[40px]">
+        <!-- <div class="text-[#3A321D] font-montserrat text-[32px] font-bold leading-[20px] mb-10">Offered Courses</div> -->
+        <div class="flex w-[100%] rounded-[10px] h-[413px]" style="border: 1px solid #CCC;">
+            <div class="h-[413px] w-[40%]">
+                <img src="./assets/ship2.png" class="w-[100%] h-[413px]" />
+            </div>
+            <div class="w-[60%] px-[50px] py-[30px] flex flex-col justify-between">
+                <h2 class="text-[#3A321D] font-['Montserrat'] text-[24px] font-bold leading-[40px]">
                     LNG Tanker Cargo Operations and Ballast Water Handling Simulator (LCHS) Course.
                 </h2>
-                <p class="text-[#3A321D] font-montserrat text-[18px] font-normal leading-[25px] py-[50px]">
+                <p class="text-[#3A321D] font-['Montserrat'] text-[18px] font-normal leading-[25px]  -mt-[10px]">
                     The aim of this course is to ensure that mariners are trained and prepared to respond safely and
                     efficiently for controlling the cargo handling and other operations on LNG carriers, required in
                     today’s Tanker trade. It gives the participants “hands-on” training and builds their confidence in
                     handling cargo operations and troubleshooting during work in LNG carriers.
                 </p>
                 <button
-                    class="w-[142.15px] h-[61.94px] bg-gradient-to-r from-[#001aaf] to-[#871eb6] rounded-[10px] text-[#FFF] text-center font-montserrat text-[16px] font-bold leading-normal">
+                    class="w-[142.15px] py-[12px]  bg-gradient-to-r from-[#001aaf] to-[#871eb6] rounded-[10px] text-[#FFF] text-center font-['Montserrat'] text-[16px] font-bold leading-normal">
                     Start Course
                 </button>
             </div>
@@ -156,22 +165,21 @@
     <!-- course list -->
     <section class="content-container">
         <div class="left-side">
-            <div class="text-white font-montserrat text-4xl font-bold leading-tight">Key Benefits</div>
+            <div class="text-white font-['montserrat'] text-4xl font-bold leading-tight">Key Benefits</div>
             <div class="topic flex" data-target="topic1">
-                <p class="pr-2 text-white font-montserrat text-xl font-normal leading-[2.8125rem]">01</p>
+                <p class="pr-2 text-white font-['montserrat'] text-xl font-normal leading-[2.8125rem]">01</p>
                 <div class="flex justify-between w-[100%]">
-                    <p class="text-white font-montserrat text-2xl font-bold leading-[2.8125rem]">Course Focus</p>
+                    <p class="text-white font-['montserrat'] text-2xl font-bold leading-[2.8125rem]">Course Focus</p>
                     <div style="width: 36px; height:36px;  border:2px solid white; border-radius: 50px; color: black; display: flex; justify-content: center; align-items: center; font-weight: 900; transition: transform 0.5s ease;"
                         class="icon">
-                        <!-- <i class="fa-solid fa-less-than font-bold text-white"></i> -->
                         <i class="fa-solid fa-greater-than font-bold text-white"></i>
                     </div>
                 </div>
             </div>
             <div class="topic flex" data-target="topic2">
-                <p class="pr-2 text-white font-montserrat text-xl font-normal leading-[2.8125rem]">02</p>
+                <p class="pr-2 text-white font-['montserrat'] text-xl font-normal leading-[2.8125rem]">02</p>
                 <div class="flex justify-between w-[100%]">
-                    <p class="text-white font-montserrat text-2xl font-bold leading-[2.8125rem]">Practical Exercises</p>
+                    <p class="text-white font-['montserrat'] text-2xl font-bold leading-[2.8125rem]">Practical Exercises</p>
                     <div style="width: 36px; height:36px;  border:2px solid white; border-radius: 50px; color: black; display: flex; justify-content: center; align-items: center; font-weight: 900; transition: transform 0.5s ease;"
                         class="icon">
                         <i class="fa-solid fa-greater-than font-bold text-white"></i>
@@ -179,9 +187,9 @@
                 </div>
             </div>
             <div class="topic flex" data-target="topic3">
-                <p class="pr-2 text-white font-montserrat text-xl font-normal leading-[2.8125rem]">03</p>
+                <p class="pr-2 text-white font-['montserrat'] text-xl font-normal leading-[2.8125rem]">03</p>
                 <div class="flex justify-between w-[100%]">
-                    <p class="text-white font-montserrat text-2xl font-bold leading-[2.8125rem]">Operation & Control of
+                    <p class="text-white font-['montserrat'] text-2xl font-bold leading-[2.8125rem]">Operation & Control of
                         Cargo</p>
                     <div style="width: 36px; height:36px;  border:2px solid white; border-radius: 50px; color: black; display: flex; justify-content: center; align-items: center; font-weight: 900; transition: transform 0.5s ease;"
                         class="icon">
@@ -190,9 +198,9 @@
                 </div>
             </div>
             <div class="topic flex" data-target="topic4" style="border: none;">
-                <p class="pr-2 text-white font-montserrat text-xl font-normal leading-[2.8125rem]">04</p>
+                <p class="pr-2 text-white font-['montserrat'] text-xl font-normal leading-[2.8125rem]">04</p>
                 <div class="flex justify-between w-[100%]">
-                    <p class="text-white font-montserrat text-2xl font-bold leading-[2.8125rem]">Simulated Cargo
+                    <p class="text-white font-['montserrat'] text-2xl font-bold leading-[2.8125rem]">Simulated Cargo
                         Exercises</p>
                     <div style="width: 36px; height:36px;  border:2px solid white; border-radius: 50px; color: black; display: flex; justify-content: center; align-items: center; font-weight: 900; transition: transform 0.5s ease;"
                         class="icon">
@@ -201,12 +209,12 @@
                 </div>
             </div>
         </div>
-        <div class="right-side mr-[120px] ml-[50px]">
+        <div class="right-side ml-[50px] mr-[75px]"> <!--mr-[100%] --> 
             <div id="topic1" class="right-side-content active">
                 <div class="flex flex-col gap-[30px]">
-                    <p class="pr-2 text-white font-montserrat text-xl font-normal leading-[2.8125rem]">01</p>
+                    <p class="pr-2 text-white font-['montserrat'] text-xl font-normal leading-[2.8125rem]">01</p>
                     <img src="./assets/integration.png" class="w-[6rem] h-[6rem]" />
-                    <h2 class="text-white font-montserrat text-2xl font-bold leading-[2.8125rem]">Course Focus</h2>
+                    <h2 class="text-white font-['montserrat'] text-2xl font-bold leading-[2.8125rem]">Course Focus</h2>
                     <p class="text-white font-bold text-[1.125rem] leading-[1.5625rem] font-[Montserrat]">The course
                         focuses on ensuring understanding of the principles involved, and the undertaking of all cargo
                         operations carried out on an LNG carrier, in a safe and efficient manner.  </p>
@@ -214,9 +222,9 @@
             </div>
             <div id="topic2" class="right-side-content">
                 <div class="flex flex-col gap-[30px]">
-                    <p class="pr-2 text-white font-montserrat text-xl font-normal leading-[2.8125rem]">02</p>
+                    <p class="pr-2 text-white font-['montserrat'] text-xl font-normal leading-[2.8125rem]">02</p>
                     <img src="./assets/notebook.png" class="w-[6rem] h-[6rem]" />
-                    <h2 class="text-white font-montserrat text-2xl font-bold leading-[2.8125rem]">Practical Exercises
+                    <h2 class="text-white font-['montserrat'] text-2xl font-bold leading-[2.8125rem]">Practical Exercises
                     </h2>
                     <p class="text-white font-bold text-[1.125rem] leading-[1.5625rem] font-[Montserrat]">Practical
                         exercises structured around the procedures and operation of the cargo and ballast installation
@@ -225,9 +233,9 @@
             </div>
             <div id="topic3" class="right-side-content">
                 <div class="flex flex-col gap-[30px]">
-                    <p class="pr-2 text-white font-montserrat text-xl font-normal leading-[2.8125rem]">03</p>
+                    <p class="pr-2 text-white font-['montserrat'] text-xl font-normal leading-[2.8125rem]">03</p>
                     <img src="./assets/cargo-ship.png" class="w-[6rem] h-[6rem]" />
-                    <h2 class="text-white font-montserrat text-2xl font-bold leading-[2.8125rem]">Operation & Control of
+                    <h2 class="text-white font-['montserrat'] text-2xl font-bold leading-[2.8125rem]">Operation & Control of
                         Cargo</h2>
                     <p class="text-white font-bold text-[1.125rem] leading-[1.5625rem] font-[Montserrat]">A safer and
                         more effective contribution to the operation and control of the cargo and ballast installation
@@ -236,9 +244,9 @@
             </div>
             <div id="topic4" class="right-side-content">
                 <div class="flex flex-col gap-[30px]">
-                    <p class="pr-2 text-white font-montserrat text-xl font-normal leading-[2.8125rem]">04</p>
+                    <p class="pr-2 text-white font-['montserrat'] text-xl font-normal leading-[2.8125rem]">04</p>
                     <img src="./assets/simulation.png" class="w-[6rem] h-[6rem]" />
-                    <h2 class="text-white font-montserrat text-2xl font-bold leading-[2.8125rem]">Simulated Cargo
+                    <h2 class="text-white font-['montserrat'] text-2xl font-bold leading-[2.8125rem]">Simulated Cargo
                         Exercises</h2>
                     <p class="text-white font-bold text-[1.125rem] leading-[1.5625rem] font-[Montserrat]">Simulated
                         cargo exercises conducted using a 'State of the art' LNG Cargo Operations Simulator, covering
@@ -252,7 +260,7 @@
     <!-- container -->
     <section>
         <div class="container-ship">
-            <h1 class="text-white font-montserrat text-[2.25rem] font-bold leading-normal pt-[120px] ml-[120px]">Key
+            <h1 class="text-white font-['montserrat'] text-[2.25rem] font-bold leading-normal pt-[150px] ml-[120px]">Key
                 Features</h1>
         </div>
 
@@ -264,13 +272,12 @@
                         Course Objective
                     </h3>
                     <p
-                        class="bodycontent text-[#3a321d] text-base font-normal font-['Montserrat'] leading-[25px] py-[16px] text-[16px] mb-[25px]">
+                        class="bodycontent text-[#3a321d] text-base font-normal font-['Montserrat'] leading-[25px] py-[16px] text-[16px]">
                         With the growing understanding about hazards involving carriage of LNG cargo, this course
                         develops the professional skills and confidence of Deck officers who are engaged in the handling
                         of Bulk Liquid Cargoes with the help of simulating the cargo operations conducted on LNG
                         Tankers.
                     </p>
-                    <a href="#" class="btn">Learn more</a>
                 </div>
             </div>
         </section>
@@ -285,7 +292,7 @@
                 <div class="accordion-item active">
                     <div class="accordion-title"><u>Who is it for</u></div>
                     <div class="accordion-content">
-                        <p>Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
+                        <p class="font-['montserrat']">Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
                             aimed at those who will be responsible for the safe planning and execution of operations
                             related to the cargo on board such vessels. The course will also be suitable for anybody
                             engaged in the LNG industry who wishes to acquire a better understanding of the cargo
@@ -295,7 +302,7 @@
                 <div class="accordion-item">
                     <div class="accordion-title"><u>Syllabus Encompasses </u></div>
                     <div class="accordion-content">
-                        <p>Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
+                        <p class="font-['montserrat']">Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
                             aimed at those who will be responsible for the safe planning and execution of operations
                             related to the cargo on board such vessels. The course will also be suitable for anybody
                             engaged in the LNG industry who wishes to acquire a better understanding of the cargo
@@ -305,7 +312,7 @@
                 <div class="accordion-item">
                     <div class="accordion-title"><u>Methodology</u></div>
                     <div class="accordion-content">
-                        <p>Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
+                        <p class="font-['montserrat']">Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
                             aimed at those who will be responsible for the safe planning and execution of operations
                             related to the cargo on board such vessels. The course will also be suitable for anybody
                             engaged in the LNG industry who wishes to acquire a better understanding of the cargo
@@ -315,7 +322,7 @@
                 <div class="accordion-item">
                     <div class="accordion-title"><u>Certification</u></div>
                     <div class="accordion-content">
-                        <p>Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
+                        <p class="font-['montserrat']">Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
                             aimed at those who will be responsible for the safe planning and execution of operations
                             related to the cargo on board such vessels. The course will also be suitable for anybody
                             engaged in the LNG industry who wishes to acquire a better understanding of the cargo
@@ -325,7 +332,7 @@
                 <div class="accordion-item">
                     <div class="accordion-title"><u>Duration of Online Class</u></div>
                     <div class="accordion-content">
-                        <p>Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
+                        <p class="font-['montserrat']">Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
                             aimed at those who will be responsible for the safe planning and execution of operations
                             related to the cargo on board such vessels. The course will also be suitable for anybody
                             engaged in the LNG industry who wishes to acquire a better understanding of the cargo
@@ -335,7 +342,7 @@
                 <div class="accordion-item">
                     <div class="accordion-title"><u>Suggested Target Group</u></div>
                     <div class="accordion-content">
-                        <p>Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
+                        <p class="font-['montserrat']">Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
                             aimed at those who will be responsible for the safe planning and execution of operations
                             related to the cargo on board such vessels. The course will also be suitable for anybody
                             engaged in the LNG industry who wishes to acquire a better understanding of the cargo
@@ -346,11 +353,11 @@
 
             <div class="flex flex-row gap-[20px]" style="margin-top: 50px;">
                 <button
-                    class="w-[142.15px] h-[61.94px] bg-gradient-to-r from-[#001aaf] to-[#871eb6] rounded-[10px] text-[#FFF] text-center font-montserrat text-[16px] font-bold leading-normal">
-                    Start Course
+                    class="w-[142.15px] h-[61.94px] bg-gradient-to-r from-[#001aaf] to-[#871eb6] rounded-[10px] text-[#FFF] text-center font-['montserrat'] text-[16px] font-bold leading-normal">
+                    Book Course
                 </button>
                 <button
-                    class="w-[142.15px] h-[61.94px] bg-gradient-to-r from-[#001aaf] to-[#871eb6] rounded-[10px] text-[#FFF] text-center font-montserrat text-[16px] font-bold leading-normal">
+                    class="w-[142.15px] h-[61.94px] bg-gradient-to-r from-[#001aaf] to-[#871eb6] rounded-[10px] text-[#FFF] text-center font-['montserrat'] text-[16px] font-bold leading-normal">
                     Start Course
                 </button>
             </div>
@@ -364,24 +371,24 @@
             <div class="row">
                 <div class="col1">
                     <img src="./assets/logo.webp" alt="logo">
-                    <p class="bodycontent">© 2024 Avrio. All rights reserved</p>
+                    <p class="bodycontent font-['montserrat']">© 2024 Avrio. All rights reserved</p>
                 </div>
 
                 <div class="col2">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Courses</a></li>
-                        <li> <a href="#">About</a></li>
-                        <li> <a href="#">Privacy Policy</a></li>
+                        <li class="font-['montserrat']"><a href="#">Home</a></li>
+                        <li class="font-['montserrat']"><a href="#">Courses</a></li>
+                        <li class="font-['montserrat']"> <a href="#">About</a></li>
+                        <li class="font-['montserrat']"> <a href="#">Privacy Policy</a></li>
 
                     </ul>
                 </div>
                 <div class="col3">
                     <ul>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Blogs</a></li>
-                        <li> <a href="#">Testimonials</a></li>
-                        <li> <a href="#">Terms & Conditions</a></li>
+                        <li class="font-['montserrat']"><a href="#">Contact</a></li>
+                        <li class="font-['montserrat']"><a href="#">Blogs</a></li>
+                        <li class="font-['montserrat']"> <a href="#">Testimonials</a></li>
+                        <li class="font-['montserrat']"> <a href="#">Terms & Conditions</a></li>
 
                     </ul>
                 </div>
@@ -390,33 +397,7 @@
     </footer>
 
     <script src="./script.js"></script>
-    <!-- <script>
-        // JavaScript to handle topic switching
-        const topics = document.querySelectorAll('.left-side .topic');
-        const contents = document.querySelectorAll('.right-side-content');
-    
-        // Default content (first topic)
-        const defaultContent = document.querySelector('#topic1');
-        defaultContent.classList.add('active');
-    
-        topics.forEach(topic => {
-            topic.addEventListener('mouseover', function() {
-                const targetId = this.getAttribute('data-target');
-                contents.forEach(content => {
-                    content.classList.remove('active');
-                });
-                document.getElementById(targetId).classList.add('active');
-            });
-    
-            topic.addEventListener('mouseleave', function() {
-                // Show the default content again when mouse leaves
-                contents.forEach(content => {
-                    content.classList.remove('active');
-                });
-                defaultContent.classList.add('active');
-            });
-        });
-    </script> -->
+
     <script>
         // JavaScript to handle topic switching
         const topics = document.querySelectorAll('.left-side .topic');

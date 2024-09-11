@@ -6,18 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avrio</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 </head>
 
 <body>
@@ -51,7 +59,8 @@
                 <div class="text-white text-[56px] font-bold font-['Montserrat'] leading-[60px]">AVRIO’s Cloud based
                     <br />LNG Training Simulator<br />
                 </div>
-                <div class=" text-white text-lg font-normal font-['Montserrat'] leading-[30px] py-[26px]">A cutting-edge
+                <div class=" text-white text-lg font-normal font-['Montserrat'] leading-[30px] py-[26px] w-[60%]">A
+                    cutting-edge
                     tool revolutionizing how professionals are trained in handling LNG operations.</div>
                 <button
                     class="py-[7.11px] px-3 text-center text-white text-base font-bold font-['Inter'] bg-gradient-to-r from-[#001aaf] to-[#871eb6] rounded-[10px]">Book
@@ -59,28 +68,16 @@
             </div>
         </div>
 
-        <!-- <div class="h-[401px] bg-gradient-to-r from-[#001aaf] to-[#871eb6]"></div> -->
-
-        <!-- <div class="flex flex-col py-[33px] px-[15px] bg-white flex-shrink-0 rounded-[10px] mx-[120px] z-30">
-            <div class="text-[#3a321d] text-[28px] font-bold font-['Montserrat'] leading-10 pb-[16px]">AVRIO: Your Gateway to Staying Relevant and Prepared for the Future.</div>
-            <hr class="w-full"/>
-            <div class="text-[#3a321d] text-base font-normal font-['Montserrat'] leading-[25px] py-[16px]">
-                In the fast-evolving world of maritime operations, the Liquefied Natural Gas (LNG) sector stands out for its complexity and high safety standards. The need for specialized training for maritime professionals in the LNG industry has never been greater.
-                At Avrio, we up-skill and re-skill officers to ensure they are future-ready and relevant. Our experiential LNG training simulator focuses on achieving two major goals: operational excellence and enhanced maritime safety.
-                <br /><br />
-                Enter the AVRIO LNG training simulator - Fostering a dynamic and immersive learning environment with interactive graphics for enhanced user engagement.
-            </div>
-            <button class="w-[140px] py-[7.11px] text-center text-white text-base font-bold font-['Inter'] bg-gradient-to-r from-[#001aaf] to-[#871eb6] rounded-[10px]">Learn More</button>
-        </div> -->
-
         <section class="about">
             <div class="wrapper">
                 <div class="aboutcontent">
-                    <h3 class="text-[#3a321d] text-[28px] font-bold font-['Montserrat'] leading-10 pb-[16px]">AVRIO:
-                        Your Gateway to Staying Relevant and Prepared for the Future.</h3>
-                    <hr>
+                    <div class="text-[#3a321d] text-[28px] font-bold font-['Montserrat'] leading-10 pb-[15px]">AVRIO:
+                        Your Gateway to Staying Relevant and Prepared for the Future.</div>
+
+                    <hr class="hr" />
+
                     <p
-                        class="bodycontent text-[#3a321d] text-base font-normal font-['Montserrat'] leading-[25px] py-[16px] text-[16px]">
+                        class="bodycontent text-[#3a321d] text-base font-normal font-['Montserrat'] leading-[25px] py-[15px] text-[16px]">
                         In the fast-evolving world of maritime operations, the Liquefied Natural Gas (LNG) sector stands
                         out for its complexity and high safety standards. The need for specialized training for maritime
                         professionals in the LNG industry has never been greater. At Avrio, we up-skill and re-skill
@@ -96,26 +93,29 @@
     </section>
 
     <section class="mx-[120px] my-[50px]">
-        <div class="text-[#3A321D] font-montserrat text-[32px] font-bold leading-[20px] mb-10">Offered Courses</div>
-        <div class="flex w-[100%] rounded-[10px]" style="border: 1px solid #CCC;">
-            <img src="./assets/courses.png" class="w-[35%] h-[499.127px]" />
-            <div class="w-[65%] p-[50px]">
-                <h2 class="text-[#3A321D] font-montserrat text-[24px] font-bold leading-[40px]">LNG Tanker Cargo
+        <div class="text-[#3A321D] font-['montserrat'] text-[32px] font-bold leading-[20px] mb-10">Offered Courses</div>
+        <div class="flex w-[100%] rounded-[10px] h-[413px]" style="border: 1px solid #CCC;">
+            <div class="h-[413px] w-[40%]">
+                <img src="./assets/courses.png" class="w-[100%] h-[413px]" />
+            </div>
+            <div class="w-[60%] py-[30px] px-[50px] flex flex-col justify-between">
+                <h2 class="text-[#3A321D] font-['montserrat'] text-[24px] font-bold leading-[40px]">LNG Tanker Cargo
                     Operations and Ballast Water Handling Simulator (LCHS)</h2>
-                <p class="text-[#3A321D] font-montserrat text-[18px] font-normal leading-[25px] py-[50px]">Realistic
+                <p class="text-[#3A321D] font-['montserrat'] text-[18px] font-normal leading-[25px]">Realistic
                     Scenarios: <br /> Unlike theoretical learning or static training, Avrio’s LNG Simulator provide
                     dynamic and interactive experiences. Trainees can engage with realistic scenarios, such as cargo
                     transfer operations, emergency shutdowns, and system malfunctions. This hands-on approach helps
                     solidify their understanding and prepares them for real-life challenges.</p>
                 <button
-                    class="w-[142.15px] h-[61.94px] bg-gradient-to-r from-[#001aaf] to-[#871eb6] rounded-[10px] text-[#FFF] text-center font-montserrat text-[16px] font-bold leading-normal">Learn
+                    class="w-[142.15px] py-[12px]  bg-gradient-to-r from-[#001aaf] to-[#871eb6] rounded-[10px] text-[#FFF] text-center font-['Montserrat'] text-[16px] font-bold leading-normal">Learn
                     more</button>
             </div>
         </div>
     </section>
 
-     <section class="testimonial-bg">
-        <div class="text-[#FFF] font-montserrat text-[32px] font-bold leading-[20px] ml-[120px] py-[50px]">Testimonials</div>
+    <section class="testimonial-bg">
+        <div class="text-[#FFF] font-['montserrat'] text-[32px] font-bold leading-[20px] ml-[120px] py-[50px]">Testimonials
+        </div>
         <div id="testimonials">
             <button class="prev circle-btn arrow-left"></button>
             <div class="slider-container">
@@ -129,9 +129,10 @@
                             </div>
                             <div class="face face2">
                                 <div class="content">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cumque minus iste veritatis provident at.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cumque minus iste
+                                        veritatis provident at.</p>
                                     <div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -146,7 +147,8 @@
                             </div>
                             <div class="face face2">
                                 <div class="content">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cumque minus iste veritatis provident at.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cumque minus iste
+                                        veritatis provident at.</p>
                                     <a href="#">Read More</a>
                                 </div>
                             </div>
@@ -156,13 +158,15 @@
                         <div class="card">
                             <div class="face face1">
                                 <div class="content">
-                                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">
+                                    <img
+                                        src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">
                                     <h3>Design</h3>
                                 </div>
                             </div>
                             <div class="face face2">
                                 <div class="content">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cumque minus iste veritatis provident at.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cumque minus iste
+                                        veritatis provident at.</p>
                                     <a href="#">Read More</a>
                                 </div>
                             </div>
@@ -172,13 +176,15 @@
                         <div class="card">
                             <div class="face face1">
                                 <div class="content">
-                                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">
+                                    <img
+                                        src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">
                                     <h3>Design</h3>
                                 </div>
                             </div>
                             <div class="face face2">
                                 <div class="content">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cumque minus iste veritatis provident at.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cumque minus iste
+                                        veritatis provident at.</p>
                                     <a href="#">Read More</a>
                                 </div>
                             </div>
@@ -190,13 +196,13 @@
         </div>
     </section>
 
-    
+
 
     <!----clients logo-->
-    <section class="my-[50px]">
+    <section class="my-[80px]">
         <div class="mx-[120px]">
-            <h3 class="text-[#3A321D] font-montserrat text-[32px] font-bold leading-[20px]">Clients</h3>
-            <p class="text-[#3A321D] font-montserrat text-[18px] font-normal leading-[32px] py-[20px]">Avrio has
+            <h3 class="text-[#3A321D] font-['montserrat'] text-[32px] font-bold leading-[20px]">Clients</h3>
+            <p class="text-[#3A321D] font-['montserrat'] text-[18px] font-normal leading-[32px] py-[30px] w-[70%]">Avrio has
                 partnered with leading organisations including Google, Microsoft, and Amazon and many more to deliver
                 innovative and impactful solutions.</p>
         </div>
@@ -219,6 +225,7 @@
 
     <!-----blog post-->
     <section id="blog-posts" class="mx-[120px] my-[50px]">
+        <h2 class="text-[#3a321d] text-4xl font-bold font-['Montserrat'] pb-[50px]">Blogs</h2>
         <div class="wrapper">
             <div class="blog-posts">
                 <!-- Blog posts will be dynamically injected here -->
@@ -238,24 +245,24 @@
             <div class="row">
                 <div class="col1">
                     <img src="./assets/logo.webp" alt="logo">
-                    <p class="bodycontent">© 2024 Avrio. All rights reserved</p>
+                    <p class="bodycontent font-['montserrat']">© 2024 Avrio. All rights reserved</p>
                 </div>
 
                 <div class="col2">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Courses</a></li>
-                        <li> <a href="#">About</a></li>
-                        <li> <a href="#">Privacy Policy</a></li>
+                        <li><a href="#" class="font-['montserrat']">Home</a></li>
+                        <li><a href="#" class="font-['montserrat']">Courses</a></li>
+                        <li> <a href="#" class="font-['montserrat']">About</a></li>
+                        <li> <a href="#" class="font-['montserrat']">Privacy Policy</a></li>
 
                     </ul>
                 </div>
                 <div class="col3">
                     <ul>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Blogs</a></li>
-                        <li> <a href="#">Testimonials</a></li>
-                        <li> <a href="#">Terms & Conditions</a></li>
+                        <li><a href="#" class="font-['montserrat']">Contact</a></li>
+                        <li><a href="#" class="font-['montserrat']">Blogs</a></li>
+                        <li> <a href="#" class="font-['montserrat']">Testimonials</a></li>
+                        <li> <a href="#" class="font-['montserrat']">Terms & Conditions</a></li>
 
                     </ul>
                 </div>
