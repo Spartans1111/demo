@@ -1234,11 +1234,11 @@ video {
 
 /* about */
 
-h3 {
+/* h3 {
   font-size: 28px;
   font-weight: 700;
   line-height: 1.7em;
-}
+} */
 
 .about {
   background: linear-gradient(90deg, #001aaf 0%, #871eb6 100%);
@@ -1668,7 +1668,7 @@ footer ul li a {
 }
 
 .left-side > div {
-  padding: 20px 120px;
+  padding: 40px 40px 40px 120px;
   border-bottom: 1px solid white;
 }
 
@@ -1791,8 +1791,9 @@ footer ul li a {
   background-color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 20px;
-  margin: 100px 120px;
+  /* margin: 100px 120px; */
   padding: 30px 50px;
+  margin: 60px;
 }
 
 .project-detail form {
