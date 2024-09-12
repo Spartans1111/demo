@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -31,7 +34,7 @@
 <body>
     <!-- navbar -->
     <nav class="h-[99px] bg-white backdrop-blur-[30px] flex justify-between px-28 items-center mx-auto">
-        <img class="w-[103.56px] h-[101.56px]" src="./assets/logo.webp" alt="Logo" />
+        <img class="w-[103.56px] h-[101.56px]" src="./assets/avrio-logo.svg" alt="Logo" />
 
         <div class="flex gap-[40px] items-center justify-center h-[29px]">
             <ul class="list-none flex flex-row gap-[60px]">
@@ -53,7 +56,12 @@
     <!-- login form -->
     <div id="myModal1" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <span class="close">
+                <svg xmlns="http://www.w3.org/2000/svg" style="width:80px; height:80px">
+                <path d="M 16 14 C 15.488 14 14.976938 14.194937 14.585938 14.585938 C 13.804937 15.366937 13.804937 16.633063 14.585938 17.414062 L 29.171875 32 L 14.585938 46.585938 C 13.804938 47.366938 13.804937 48.633063 14.585938 49.414062 C 14.976937 49.805062 15.488 50 16 50 C 16.512 50 17.023062 49.805062 17.414062 49.414062 L 32 34.828125 L 46.585938 49.414062 C 47.366938 50.195063 48.633063 50.195062 49.414062 49.414062 C 50.195063 48.633062 50.195062 47.366937 49.414062 46.585938 L 34.828125 32 L 49.414062 17.414062 C 50.195063 16.633063 50.195062 15.366938 49.414062 14.585938 C 48.633062 13.804938 47.366937 13.804938 46.585938 14.585938 L 32 29.171875 L 17.414062 14.585938 C 17.023062 14.194938 16.512 14 16 14 z"></path>
+                </svg>
+            </span>
+
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="324"  fill="none" class="svg">
                 <path d="M-45 124.126C-42.5473 38.0733 53.5971 -88.8298 418.554 91.9792C554.69 159.425 825.214 106.452 837 29.3757V18.9396C837.537 22.4605 837.525 25.942 837 29.3757V338H-45V124.126Z" fill="url(#paint0_linear_909_22124)"/>
                 <defs>
@@ -112,7 +120,11 @@
         <!-- enquire -->
         <div id="myModal2" class="modal">
             <div class="modal-content">
-                <span class="close">&times;</span>
+                <span class="close">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="width:80px; height:80px">
+                        <path d="M 16 14 C 15.488 14 14.976938 14.194937 14.585938 14.585938 C 13.804937 15.366937 13.804937 16.633063 14.585938 17.414062 L 29.171875 32 L 14.585938 46.585938 C 13.804938 47.366938 13.804937 48.633063 14.585938 49.414062 C 14.976937 49.805062 15.488 50 16 50 C 16.512 50 17.023062 49.805062 17.414062 49.414062 L 32 34.828125 L 46.585938 49.414062 C 47.366938 50.195063 48.633063 50.195062 49.414062 49.414062 C 50.195063 48.633062 50.195062 47.366937 49.414062 46.585938 L 34.828125 32 L 49.414062 17.414062 C 50.195063 16.633063 50.195062 15.366938 49.414062 14.585938 C 48.633062 13.804938 47.366937 13.804938 46.585938 14.585938 L 32 29.171875 L 17.414062 14.585938 C 17.023062 14.194938 16.512 14 16 14 z"></path>
+                    </svg>
+                </span>
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="630" fill="none" class="svg">
                     <path d="M-45 120.814C-42.5473 37.4945 53.5971 -85.3779 418.554 89.6883C554.69 154.992 825.214 103.702 837 29.0733V18.9687C837.537 22.3777 837.525 25.7487 837 29.0733V918.521H-45V120.814Z" fill="url(#paint0_linear_909_22209)"/>
@@ -150,7 +162,7 @@
     <!-- courses -->
     <section class="mx-[120px] my-[50px]">
         <!-- <div class="text-[#3A321D] font-montserrat text-[32px] font-bold leading-[20px] mb-10">Offered Courses</div> -->
-        <div class="flex w-[100%] rounded-[10px] h-[413px]" style="border: 1px solid #CCC;">
+        <div class="flex w-[100%] rounded-[10px] h-[413px] offered-course" style="border: 1px solid #CCC;">
             <div class="h-[413px] w-[40%]">
                 <img src="./assets/ship2.png" class="w-[100%] h-[413px]" />
             </div>
@@ -180,9 +192,9 @@
 
                 <div class="flex justify-between w-[100%]">
                     <p class="text-white font-['montserrat'] text-[32px] font-bold leading-[2.8125rem]">Course Focus</p>
-                    <div style="width: 36px; height:36px;  border:2px solid white; border-radius: 50px; color: black; display: flex; justify-content: center; align-items: center; font-weight: 900; transition: transform 0.5s ease;"
+                    <div style="width: 36px; height:36px; color: white; border:2px solid white; border-radius: 50px;  display: flex; justify-content: center; align-items: center; font-weight: 900; transition: transform 0.5s ease; font-family: 'Font Awesome 5 Free';"
                         class="icon">
-                        <i class="fa-solid fa-greater-than font-bold text-white"></i>
+                        <i class="fas fa-chevron-right"></i>
                     </div>
                 </div>
             </div>
@@ -190,9 +202,9 @@
 
                 <div class="flex justify-between w-[100%]">
                     <p class="text-white font-['montserrat'] text-[32px] font-bold leading-[2.8125rem]">Practical Exercises</p>
-                    <div style="width: 36px; height:36px;  border:2px solid white; border-radius: 50px; color: black; display: flex; justify-content: center; align-items: center; font-weight: 900; transition: transform 0.5s ease;"
+                    <div style="width: 36px; height:36px; color: white; border:2px solid white; border-radius: 50px;  display: flex; justify-content: center; align-items: center; font-weight: 900; transition: transform 0.5s ease; font-family: 'Font Awesome 5 Free';"
                         class="icon">
-                        <i class="fa-solid fa-greater-than font-bold text-white"></i>
+                        <i class="fas fa-chevron-right"></i>
                     </div>
                 </div>
             </div>
@@ -201,9 +213,9 @@
                 <div class="flex justify-between w-[100%]">
                     <p class="text-white font-['montserrat'] text-[32px] font-bold leading-[2.8125rem]">Operation & Control of
                         Cargo</p>
-                    <div style="width: 36px; height:36px;  border:2px solid white; border-radius: 50px; color: black; display: flex; justify-content: center; align-items: center; font-weight: 900; transition: transform 0.5s ease;"
+                    <div style="width: 36px; height:36px; color: white; border:2px solid white; border-radius: 50px;  display: flex; justify-content: center; align-items: center; font-weight: 900; transition: transform 0.5s ease; font-family: 'Font Awesome 5 Free';"
                         class="icon">
-                        <i class="fa-solid fa-greater-than font-bold text-white"></i>
+                        <i class="fas fa-chevron-right"></i>
                     </div>
                 </div>
             </div>
@@ -212,9 +224,9 @@
                 <div class="flex justify-between w-[100%]">
                     <p class="text-white font-['montserrat'] text-[32px] font-bold leading-[2.8125rem]">Simulated Cargo
                         Exercises</p>
-                    <div style="width: 36px; height:36px;  border:2px solid white; border-radius: 50px; color: black; display: flex; justify-content: center; align-items: center; font-weight: 900; transition: transform 0.5s ease;"
+                    <div style="width: 36px; height:36px; color: white; border:2px solid white; border-radius: 50px;  display: flex; justify-content: center; align-items: center; font-weight: 900; transition: transform 0.5s ease; font-family: 'Font Awesome 5 Free';"
                         class="icon">
-                        <i class="fa-solid fa-greater-than font-bold text-white"></i>
+                        <i class="fas fa-chevron-right"></i>
                     </div>
                 </div>
             </div>
@@ -223,7 +235,8 @@
             <div id="topic1" class="right-side-content active">
                 <div class="flex flex-col gap-[30px]">
 
-                    <img src="./assets/integration.png" class="w-[6rem] h-[6rem]" />
+                    <img src="./assets/integration 1.svg" class="w-[6rem] h-[6rem]" />
+
                     <h2 class="text-white font-['montserrat'] text-[32px] font-bold leading-[2.8125rem]">Course Focus</h2>
                     <p class="text-white text-lg font-bold text-[1.125rem] leading-[1.5625rem] font-[Montserrat]">The course
                         focuses on ensuring understanding of the principles involved, and the undertaking of all cargo
@@ -233,7 +246,7 @@
             <div id="topic2" class="right-side-content">
                 <div class="flex flex-col gap-[30px]">
 
-                    <img src="./assets/notebook.png" class="w-[6rem] h-[6rem]" />
+                    <img src="./assets/notebook.svg" class="w-[6rem] h-[6rem]" />
                     <h2 class="text-white font-['montserrat'] text-[32px] font-bold leading-[2.8125rem]">Practical Exercises
                     </h2>
                     <p class="text-white text-lg font-bold text-[1.125rem] leading-[1.5625rem] font-[Montserrat]">Practical
@@ -244,7 +257,7 @@
             <div id="topic3" class="right-side-content">
                 <div class="flex flex-col gap-[30px]">
 
-                    <img src="./assets/cargo-ship.png" class="w-[6rem] h-[6rem]" />
+                    <img src="./assets/cargo-ship.svg" class="w-[6rem] h-[6rem]" />
                     <h2 class="text-white font-['montserrat'] text-[32px] font-bold leading-[2.8125rem]">Operation & Control of
                         Cargo</h2>
                     <p class="text-white text-lg font-bold text-[1.125rem] leading-[1.5625rem] font-[Montserrat]">A safer and
@@ -255,7 +268,7 @@
             <div id="topic4" class="right-side-content">
                 <div class="flex flex-col gap-[30px]">
 
-                    <img src="./assets/simulation.png" class="w-[6rem] h-[6rem]" />
+                    <img src="./assets/Vector (1).svg" class="w-[6rem] h-[6rem]" />
                     <h2 class="text-white font-['montserrat'] text-[32px] font-bold leading-[2.8125rem]">Simulated Cargo
                         Exercises</h2>
                     <p class="text-white text-lg font-bold text-[1.125rem] leading-[1.5625rem] font-[Montserrat]">Simulated
@@ -276,9 +289,9 @@
 
         <section class="bg-white relative pt-[10px] z-1 pb-[60px]">
             <div class="wrapper">
-                <div class="relative z-8 bg-white rounded-[15px] py-[3.38rem] px-[3.38rem] mt-[-160px] mx-[120px]"
+                <div class="relative z-8 bg-white rounded-[15px] py-[3rem] px-[3.38rem] mt-[-160px] mx-[120px]"
                     style="box-shadow: 0px 24px 32px 0px rgba(44, 99, 229, 0.08);">
-                    <h3 class="text-[#272726] text-[28px] font-bold font-['Montserrat'] leading-10 pb-[16px]">
+                    <h3 class="text-[#272726] text-[26px] font-bold font-['Montserrat'] leading-10 pb-[25px]">
                         Course Objective
                     </h3>
                     <p
@@ -296,13 +309,13 @@
 
     <!-- accordion -->
     <section class="accordion px-[120px] py-[50px]">
-        <div class="h-[59.08694rem] px-[50px] py-[50px] rounded-[10px]"
+        <div class="h-[59.08694rem] px-[65px] py-[50px] rounded-[10px]"
             style="background-color: rgba(16, 22, 36, 0.6);">
             <div class="accordion-container">
                 <div class="accordion-item active">
-                    <div class="accordion-title"><u>Who is it for</u></div>
+                    <div class="accordion-title">Who is it for</div>
                     <div class="accordion-content">
-                        <p class="font-['montserrat']">Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
+                        <p class="text-[#fbf2eb] text-lg font-bold font-['Montserrat'] leading-7">Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
                             aimed at those who will be responsible for the safe planning and execution of operations
                             related to the cargo on board such vessels. The course will also be suitable for anybody
                             engaged in the LNG industry who wishes to acquire a better understanding of the cargo
@@ -310,9 +323,9 @@
                     </div>
                 </div>
                 <div class="accordion-item">
-                    <div class="accordion-title"><u>Syllabus Encompasses </u></div>
+                    <div class="accordion-title">Syllabus Encompasses </div>
                     <div class="accordion-content">
-                        <p class="font-['montserrat']">Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
+                        <p class="text-[#fbf2eb] text-lg font-bold font-['Montserrat'] leading-7">Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
                             aimed at those who will be responsible for the safe planning and execution of operations
                             related to the cargo on board such vessels. The course will also be suitable for anybody
                             engaged in the LNG industry who wishes to acquire a better understanding of the cargo
@@ -320,9 +333,9 @@
                     </div>
                 </div>
                 <div class="accordion-item">
-                    <div class="accordion-title"><u>Methodology</u></div>
+                    <div class="accordion-title">Methodology</div>
                     <div class="accordion-content">
-                        <p class="font-['montserrat']">Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
+                        <p class="text-[#fbf2eb] text-lg font-bold font-['Montserrat'] leading-7">Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
                             aimed at those who will be responsible for the safe planning and execution of operations
                             related to the cargo on board such vessels. The course will also be suitable for anybody
                             engaged in the LNG industry who wishes to acquire a better understanding of the cargo
@@ -330,9 +343,9 @@
                     </div>
                 </div>
                 <div class="accordion-item">
-                    <div class="accordion-title"><u>Certification</u></div>
+                    <div class="accordion-title">Certification</div>
                     <div class="accordion-content">
-                        <p class="font-['montserrat']">Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
+                        <p class="text-[#fbf2eb] text-lg font-bold font-['Montserrat'] leading-7">Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
                             aimed at those who will be responsible for the safe planning and execution of operations
                             related to the cargo on board such vessels. The course will also be suitable for anybody
                             engaged in the LNG industry who wishes to acquire a better understanding of the cargo
@@ -340,9 +353,9 @@
                     </div>
                 </div>
                 <div class="accordion-item">
-                    <div class="accordion-title"><u>Duration of Online Class</u></div>
+                    <div class="accordion-title">Duration of Online Class</div>
                     <div class="accordion-content">
-                        <p class="font-['montserrat']">Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
+                        <p class="text-[#fbf2eb] text-lg font-bold font-['Montserrat'] leading-7">Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
                             aimed at those who will be responsible for the safe planning and execution of operations
                             related to the cargo on board such vessels. The course will also be suitable for anybody
                             engaged in the LNG industry who wishes to acquire a better understanding of the cargo
@@ -350,9 +363,9 @@
                     </div>
                 </div>
                 <div class="accordion-item">
-                    <div class="accordion-title"><u>Suggested Target Group</u></div>
+                    <div class="accordion-title">Suggested Target Group</div>
                     <div class="accordion-content">
-                        <p class="font-['montserrat']">Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
+                        <p class="text-[#fbf2eb] text-lg font-bold font-['Montserrat'] leading-7">Designed for all officers and personnel who will sail on board LNG Carriers, but specifically
                             aimed at those who will be responsible for the safe planning and execution of operations
                             related to the cargo on board such vessels. The course will also be suitable for anybody
                             engaged in the LNG industry who wishes to acquire a better understanding of the cargo
@@ -380,25 +393,25 @@
         <div class="wrapper">
             <div class="row">
                 <div class="col1">
-                    <img src="./assets/logo.webp" alt="logo">
-                    <p class="bodycontent font-['montserrat']">© 2024 Avrio. All rights reserved</p>
+                    <img src="./assets/avrio-logo.svg" alt="logo">
+                    <p class="bodycontent font-['montserrat'] text-xs font-normal">© 2024 Avrio. All rights reserved</p>
                 </div>
 
                 <div class="col2">
                     <ul>
-                        <li class="font-['montserrat']"><a href="#">Home</a></li>
-                        <li class="font-['montserrat']"><a href="#">Courses</a></li>
-                        <li class="font-['montserrat']"> <a href="#">About</a></li>
-                        <li class="font-['montserrat']"> <a href="#">Privacy Policy</a></li>
+                        <li class="text-white text-sm font-normal font-['Montserrat'] leading-10"><a href="#">Home</a></li>
+                        <li class="text-white text-sm font-normal font-['Montserrat'] leading-10"><a href="#">Courses</a></li>
+                        <li class="text-white text-sm font-normal font-['Montserrat'] leading-10"> <a href="#">About</a></li>
+                        <li class="text-white text-sm font-normal font-['Montserrat'] leading-10"> <a href="#">Privacy Policy</a></li>
 
                     </ul>
                 </div>
                 <div class="col3">
                     <ul>
-                        <li class="font-['montserrat']"><a href="#">Contact</a></li>
-                        <li class="font-['montserrat']"><a href="#">Blogs</a></li>
-                        <li class="font-['montserrat']"> <a href="#">Testimonials</a></li>
-                        <li class="font-['montserrat']"> <a href="#">Terms & Conditions</a></li>
+                        <li class="text-white text-sm font-normal font-['Montserrat'] leading-10"><a href="#">Contact</a></li>
+                        <li class="text-white text-sm font-normal font-['Montserrat'] leading-10"><a href="#">Blogs</a></li>
+                        <li class="text-white text-sm font-normal font-['Montserrat'] leading-10"> <a href="#">Testimonials</a></li>
+                        <li class="text-white text-sm font-normal font-['Montserrat'] leading-10"> <a href="#">Terms & Conditions</a></li>
 
                     </ul>
                 </div>

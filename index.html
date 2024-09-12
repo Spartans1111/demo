@@ -40,7 +40,7 @@
 
 <body>
     <nav class="h-[99px] bg-white backdrop-blur-[30px] flex justify-between px-28 items-center mx-auto">
-        <img class="w-[103.56px] h-[101.56px]" src="./assets/logo.webp" alt="Logo" />
+        <img class="w-[103.56px] h-[101.56px]" src="./assets/avrio-logo.svg" alt="Logo" />
 
         <div class="flex gap-[40px] items-center justify-center h-[29px]">
             <ul class="list-none flex flex-row gap-[60px]">
@@ -95,7 +95,7 @@
                     <hr class="hr" />
 
                     <p
-                        class="bodycontent text-[#3a321d] text-base font-normal font-['Montserrat'] leading-[25px] py-[15px] text-[16px]">
+                        class="bodycontent text-[#3a321d] text-base font-normal font-['Montserrat'] leading-[25px] py-[10px] text-[16px]">
                         In the fast-evolving world of maritime operations, the Liquefied Natural Gas (LNG) sector stands
                         out for its complexity and high safety standards. The need for specialized training for maritime
                         professionals in the LNG industry has never been greater. At Avrio, we up-skill and re-skill
@@ -122,7 +122,7 @@
     <section class="mx-[120px] my-[50px]">
         <div class="text-[#3A321D] font-['montserrat'] text-[32px] font-bold leading-[20px] mb-10">Offered Courses</div>
 
-        <div class="flex w-[100%] rounded-[10px] h-[499px]" style="border: 1px solid #CCC;">
+        <div class="flex w-[100%] rounded-[10px] h-[499px] offered-course" style="border: 1px solid #CCC;">
             <div class="h-[499px] w-[38%]">
                 <img src="./assets/courses.png" class="w-[100%] h-[499px]" />
             </div>
@@ -164,16 +164,25 @@
 
         <div class="logos">
             <div class="logos-slide">
-                <img class="border-end" src="./assets/ccenture.png" />
-                <img class="border-end" src="./assets/pepsico.png" />
-                <img class="border-end" src="./assets/ahold.png" />
-                <img class="border-end" src="./assets/fattenfall.png" />
+                    <img src="./assets/ccenture.png" />
+                    <span></span>
+                    <img src="./assets/pepsico.png" />
+                    <span></span>
+                    <img src="./assets/ahold.png" />
+                    <span></span>
+                    <img src="./assets/fattenfall.png" />
+                    <span></span>
             </div>
+
             <div class="logos-slide">
-                <img class="border-end" src="./assets/ccenture.png" />
-                <img class="border-end" src="./assets/pepsico.png" />
-                <img class="border-end" src="./assets/ahold.png" />
-                <img class="border-end" src="./assets/fattenfall.png" />
+                <img src="./assets/ccenture.png" />
+                <span></span>
+                <img src="./assets/pepsico.png" />
+                <span></span>
+                <img src="./assets/ahold.png" />
+                <span></span>
+                <img src="./assets/fattenfall.png" />
+                <span></span>
             </div>
         </div>
     </section>
@@ -183,8 +192,28 @@
         <h2 class="text-[#3a321d] text-4xl font-bold font-['Montserrat'] pb-[50px]">Blogs</h2>
         <div class="wrapper">
             <div class="blog-posts">
-                <!-- Blog posts will be dynamically injected here -->
+                <div class="post">
+                    <a href="" class="post-link">
+                        <img src="./assets/lng-operation.png"  class="post-image">
+                        <div class="bg-[#ffeec3] post-category">
+                            <p class=" opacity-80 text-black text-[8px] font-bold font-['Montserrat'] uppercase leading-[18px] tracking-tight">CARGO OPERATIONS</p>
+                        </div>
+                        <h3 class="post-title text-white text-xl font-bold font-['Montserrat'] leading-normal">CARGO OPERATIONS</h3>
+                        <p class="post-date opacity-80 text-white text-sm font-bold font-['Montserrat'] leading-[18px]">Feb 29, 2024  |  4 mins read</p>
+                    </a>
+                </div>
 
+                <div class="post">
+                    <a href="" class="post-link">
+                        <img src="./assets/gas.png"  class="post-image">
+                        <div class="bg-[#b9e1ee] post-category">
+                            <p class=" opacity-80 text-black text-[8px] font-bold font-['Montserrat'] uppercase leading-[18px] tracking-tight bg-[#b9e1ee]">
+                            SIMULATOR</p>
+                        </div>
+                        <h3 class="post-title text-white text-xl font-bold font-['Montserrat'] leading-normal">SIMULATOR</h3>
+                        <p class="post-date opacity-80 text-white text-sm font-bold font-['Montserrat'] leading-[18px]">Feb 29, 2024  |  4 mins read</p>
+                    </a>
+                </div>
             </div>
             <div class="scrollbar">
                 <div class="scrollbartrack">
@@ -199,25 +228,25 @@
         <div class="wrapper">
             <div class="row">
                 <div class="col1">
-                    <img src="./assets/logo.webp" alt="logo">
-                    <p class="bodycontent font-['montserrat']">© 2024 Avrio. All rights reserved</p>
+                    <img src="./assets/avrio-logo.svg" alt="logo">
+                    <p class="bodycontent font-['montserrat'] text-xs font-normal">© 2024 Avrio. All rights reserved</p>
                 </div>
 
                 <div class="col2">
                     <ul>
-                        <li><a href="#" class="font-['montserrat']">Home</a></li>
-                        <li><a href="#" class="font-['montserrat']">Courses</a></li>
-                        <li> <a href="#" class="font-['montserrat']">About</a></li>
-                        <li> <a href="#" class="font-['montserrat']">Privacy Policy</a></li>
+                        <li class="text-white text-sm font-normal font-['Montserrat'] leading-10"><a href="#">Home</a></li>
+                        <li class="text-white text-sm font-normal font-['Montserrat'] leading-10"><a href="#">Courses</a></li>
+                        <li class="text-white text-sm font-normal font-['Montserrat'] leading-10"> <a href="#">About</a></li>
+                        <li class="text-white text-sm font-normal font-['Montserrat'] leading-10"> <a href="#">Privacy Policy</a></li>
 
                     </ul>
                 </div>
                 <div class="col3">
                     <ul>
-                        <li><a href="#" class="font-['montserrat']">Contact</a></li>
-                        <li><a href="#" class="font-['montserrat']">Blogs</a></li>
-                        <li> <a href="#" class="font-['montserrat']">Testimonials</a></li>
-                        <li> <a href="#" class="font-['montserrat']">Terms & Conditions</a></li>
+                        <li class="text-white text-sm font-normal font-['Montserrat'] leading-10"><a href="#">Contact</a></li>
+                        <li class="text-white text-sm font-normal font-['Montserrat'] leading-10"><a href="#">Blogs</a></li>
+                        <li class="text-white text-sm font-normal font-['Montserrat'] leading-10"> <a href="#">Testimonials</a></li>
+                        <li class="text-white text-sm font-normal font-['Montserrat'] leading-10"> <a href="#">Terms & Conditions</a></li>
 
                     </ul>
                 </div>
@@ -264,32 +293,32 @@
                 scrollthumb.style.left = `${thumbLeft}px`;
             });
 
-            fetch('https://console.internetspartans.com/wp-json/wp/v2/posts?_embed').then(response => response.json())
-                .then(posts => {
-                    const blogContainer = document.querySelector('.blog-posts');
-                    posts.forEach(post => {
-                        const postElement = document.createElement('div');
-                        postElement.classList.add('post');
+            // fetch('https://console.internetspartans.com/wp-json/wp/v2/posts?_embed').then(response => response.json())
+            //     .then(posts => {
+            //         const blogContainer = document.querySelector('.blog-posts');
+            //         posts.forEach(post => {
+            //             const postElement = document.createElement('div');
+            //             postElement.classList.add('post');
 
-                        // Extract the featured image
-                        const featuredImage = post._embedded['wp:featuredmedia'] ? post._embedded['wp:featuredmedia'][0].source_url : 'default-image.jpg';
+            //             // Extract the featured image
+            //             const featuredImage = post._embedded['wp:featuredmedia'] ? post._embedded['wp:featuredmedia'][0].source_url : 'default-image.jpg';
 
-                        // Create the post content with link to details page
-                        postElement.innerHTML = `
-                    <a href="postdetails.html?id=${post.id}" class="post-link">
-                        <img src="${featuredImage}" alt="${post.title.rendered}" class="post-image">
-                        <h3 class="post-title">${post.title.rendered}</h3>
-                        <p class="post-date">${new Date(post.date).toLocaleDateString()}</p>
-                        <p class="post-category">${post._embedded['wp:term'][0][0].name}</p>
-                    </a>
-                `;
+            //             // Create the post content with link to details page
+            //             postElement.innerHTML = `
+            //         <a href="postdetails.html?id=${post.id}" class="post-link">
+            //             <img src="${featuredImage}" alt="${post.title.rendered}" class="post-image">
+            //             <h3 class="post-title">${post.title.rendered}</h3>
+            //             <p class="post-date">${new Date(post.date).toLocaleDateString()}</p>
+            //             <p class="post-category">${post._embedded['wp:term'][0][0].name}</p>
+            //         </a>
+            //     `;
 
-                        blogContainer.appendChild(postElement);
-                    });
-                })
-                .catch(error => {
-                    console.error('Error fetching posts:', error);
-                });
+            //             blogContainer.appendChild(postElement);
+            //         });
+            //     })
+            //     .catch(error => {
+            //         console.error('Error fetching posts:', error);
+            //     });
         });
 
         //testimonial

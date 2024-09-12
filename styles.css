@@ -1256,9 +1256,9 @@ video {
 }
 
 .aboutcontent {
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: white;
-  padding: 56px 70px;
+  padding: 36px 70px 36px 70px;
   margin-top: -140px;
   z-index: 8;
   position: relative;
@@ -1267,7 +1267,7 @@ video {
 }
 
 .aboutcontent p {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .btn {
@@ -1279,6 +1279,18 @@ video {
   border-radius: 5px;
   font-weight: 600;
 }
+
+
+/* offered course */
+.offered-course{
+  transition: box-shadow 0.3s ease;
+}
+
+.offered-course:hover{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
 
 /*---clients---*/
 
@@ -1315,14 +1327,24 @@ video {
 
 .logos-slide {
   align-items: center;
-  display: inline-block;
+  display: inline-flex;
   animation: slide 12s linear infinite;
   padding: 10px 0;
 }
 
 .logos-slide img {
-  display: inline-block;
-  margin-right: 40px;
+  /* display: inline-block; */
+  margin:0 40px;
+  height: 100%;
+  position: relative;
+}
+
+.logos-slide span{
+  display: block;
+  width: 1px; /* Width of the vertical line */
+  height: 100px; /* Adjust based on your design */
+  background-color: lightgray /* Color of the vertical line */
+  /* margin: 0 10px;  */
 }
 
 /*-----blog post----*/
@@ -1334,6 +1356,7 @@ video {
   overflow-x: auto;
   scrollbar-width: none;
   margin-bottom: 15px;
+  border-radius: 10px;
 }
 
 .post {
@@ -1345,26 +1368,25 @@ video {
 
 .post h3 {
   position: absolute;
-  left: 2%;
-  bottom: 11%;
+  left: 5%;
+  bottom: 8%;
   color: #fff;
+  padding: 10px 0;
 }
 
 .post-category {
-  display: inline-block;
-  background-color: #ffeec3;
-  padding: 5px 28px;
+  /* display: inline-block; */
+  padding: 1px 10px;
   position: absolute;
-  bottom: 22%;
-  left: 2%;
-  color: black;
+  bottom: 18%;
+  left: 5%;
   border-radius: 5px;
 }
 
 .post-date {
   position: absolute;
-  bottom: 7%;
-  left: 2%;
+  bottom: 5%;
+  left: 5%;
   color: white;
 }
 
@@ -1441,7 +1463,7 @@ footer .row .col1 {
 
 footer .row .col1 p {
   color: white;
-  margin-left: -50px;
+  margin-left: -30px;
 }
 
 footer img {
@@ -1460,14 +1482,11 @@ footer ul li:last-child {
   margin-top: 30px;
 }
 
-footer ul li a {
-  color: white;
-}
 
 /* testimonial */
 
 .testimonial-bg {
-  background-image: url("./assets/testimonial.png");
+  background-image: url("./assets/Testimonials.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1693,21 +1712,21 @@ transform: rotate(135deg);
 
 .content-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.1fr 1fr;
   background: linear-gradient(90deg, #001aaf 0%, #871eb6 100%);
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  /* border-top: 2px solid white; */
+  border: 3px solid white;
 }
 
 .left-side {
   /* width: 50%; */
   overflow-y: auto;
-  border-right: 1px solid white;
+  border-right: 3px solid white;
 }
 
 .left-side > div {
-  padding: 40px 40px 40px 120px;
-  border-bottom: 1px solid white;
+  padding: 38px 38px 38px 120px;
+  border-bottom: 3px solid white;
 }
 
 .right-side {
@@ -1766,12 +1785,15 @@ transform: rotate(135deg);
 }
 
 .accordion-title {
-  padding: 10px 15px;
+  margin: 0 15px;
+  padding: 5px 0;
   cursor: pointer;
   font-size: 2.25rem;
   font-weight: 600;
   transition: font-size 0.3s ease;
   color: #fbf2eb;
+  border-bottom: 3px solid white;
+  width: max-content;
 }
 
 .accordion-title:hover,
@@ -1781,15 +1803,11 @@ transform: rotate(135deg);
 
 .accordion-content {
   display: none;
-  padding: 0 15px;
+  padding: 15px 15px 0 15px;
 }
 
 .accordion-content p {
   margin: 0;
-  font-size: 1.125rem;
-  color: #fbf2eb;
-  font-weight: 700;
-  line-height: 1.75rem;
 }
 
 .accordion-item.active .accordion-content {
@@ -1815,7 +1833,7 @@ transform: rotate(135deg);
   position: relative;
   background-color: white;
   margin: 5% auto;
-  padding: 40px 50px;
+  /* padding: 40px 50px; */
   border: 1px solid #888;
   width: 60%;
   border-radius: 20px;
@@ -1834,7 +1852,8 @@ transform: rotate(135deg);
   border-radius: 20px;
   /* margin: 100px 120px; */
   padding: 30px 50px;
-  margin: 60px;
+  /* margin: 60px; */
+  margin: 100px 120px;
 }
 
 .project-detail form {
@@ -1881,8 +1900,12 @@ transform: rotate(135deg);
 .close {
   color: #aaa;
   float: right;
-  font-size: 28px;
   font-weight: bold;
+  margin-right: -10px;
+}
+
+.close svg {
+  transform: scale(0.6);
 }
 
 .close:hover,
@@ -1923,4 +1946,20 @@ body.modal-open {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+
+.underline-text{
+  width: max-content;
+  position: relative;
+}
+
+.underline-text::after{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 4px;
+  width: 100%;
+  left: 0;
+  background-color: white;
 }
