@@ -1494,201 +1494,44 @@ footer ul li:last-child {
   position: relative;
 }
 
-
-/*---testimonial----*/
-#testimonials {
-  /* background-image: url('../images/feedback.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 45px 0px;
-  position: relative;
+.section{
+  position: relative;  
   width: 100%;
-  height: 90vh; */
-  height: 631px;
-
-}
-.testmonialsblock {
-  /* margin-inline: 110px; */
-  /* margin: 70px; */
-  /* margin-inline-start: 55px; */
-  margin: 70px;
-  padding: 80px 0;
 }
 
-.testbtn {
-  padding-top: 70px;
-}
-
-.testimonial {
-  position: relative;
-  padding-top: 10px;
- 
-}
-
-.testimonial-item {
-  position: relative;
-  margin: 10px;
-  width: 400px;
-  height: 428px;
-
-}
-
-.testimonial-face {
-  position: relative;
-  width: 400px;
-  height: 210px;
-  transition: 0.5s;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.testimonial-face.face1 {
-  background: #fff;
-  display: flex;
+.swiper-wrapper{
   align-items: center;
-  justify-content: center;
-  z-index: 1;
-  transform: translateY(100px);
-  /* background-color: #871EB6; */
 }
 
-.testimonial-item:hover .testimonial-face.face1 {
-  transform: translateY(0);
-  background: #fff;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  height: 30%;
+.swiper{
+  width: 82vw;
+  margin: 0 120px;
 }
 
-.testimonial-face.face1 .testimonial-content {
-  opacity: 0.8;
-  transition: opacity 0.5s;
-}
-
-.testimonial-item:hover .testimonial-face.face1 .testimonial-content {
-  opacity: 1;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 25px;
-}
-
-.testimonial-item:hover .testimonial-footer {
-  display: none;
-}
-
-.testimonial-face.face2 {
-  background: #fff;
+.swiper-wrapper .card {
+  width: 400px; 
+  background: white; 
+  box-shadow: 0px 24px 32px rgba(43.55, 99.24, 229.19, 0.08); 
+  border-radius: 10px;
+  padding: 70px 56px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 20px;
-  box-sizing: border-box;
-  width: 400px;
-  height: 210px;
-  transform: translateY(-100px);
-}
-
-.testimonial-item:hover .testimonial-face.face2 {
-  transform: translateY(0);
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-.testimonial-face.face2 p {
-  color: var(--black);
-  line-height: 1.4em;
+  align-items: center;
   text-align: center;
-}
-
-.testimonial-face.face2 .testimonial-content {
-  margin: 0;
-  padding: 0;
-}
-
-.testimonial-face.face2 .testimonial-content a {
-  margin: 15px 0 0;
-  display: inline-block;
-  text-decoration: none;
-  font-weight: 900;
-  color: #333;
-  padding: 5px;
-  border: 1px solid #333;
-}
-
-.testimonial-face.face2 .testimonial-content a:hover {
-  background: #333;
-  color: #fff;
-}
-
-.testimonial-footer {
-  padding-top: 10px;
-}
-
-
-.testimonial-footer h5 {
-  font-weight: 800;
-  font-size: 14px;
-  line-height: 17px;
 
 }
 
-
-.testimonial-footer p {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  opacity: 0.7;
-
+.content p{
+margin: 50px 0 30px 0;
 }
 
-
-
-
-.circle-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60px;  /* Adjust size of the button */
-  height: 60px;
-  border-radius: 50%;
-  background-color: white;
-  border: 4px solid transparent;
-  background-image: linear-gradient(white, white), linear-gradient(90deg, #001AAF 0%, #871EB6 100%); /* Gradient border */
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
-  cursor: pointer;
-  margin-right: 4px;
-  
+.swiper-button-next, .swiper-button-prev{
+  opacity: 1;
+  color: white;
+  transition: all 0.3s ease;
+  width: 65px;
+  height: 65px;
 }
-
-
-
-
-.circle-btn::after {
-  content: "";
-  position: absolute;
-  left: 17px;
-  z-index: 11;
-  display: block;
-  width: 24px;
-  height: 24px;
-  border-top: 6px solid #430F81;
-  border-left: 6px solid #430F81;
-
-}
-
-
-.arrow-right{
-transform: rotate(135deg);
-}
-
-.arrow-left{
- transform: rotate(-45deg);
-}
-
-
 
 /* -----------------------------course page-------------------- */
 

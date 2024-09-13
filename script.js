@@ -49,28 +49,3 @@
 
 
 // });
-
-
-
-new Swiper('.swiper', {
-    // Optional parameters
-    slidesPerView: 1, // Default for mobile
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-    // Breakpoints for responsive behavior
-    breakpoints: {
-        // When the window width is >= 768px (desktop)
-        768: {
-            slidesPerView: 3, // 3 slides per view on desktop
-        },
-        // You can add more breakpoints if needed
-        // 1024: {
-        //     slidesPerView: 4,
-        // },
-    }
-});
